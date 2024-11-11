@@ -740,11 +740,19 @@
                                                                 <th scope="col">Bank Transaction ID</th>
                                                                 <th scope="col">Requested Amount</th>
                                                                 <th scope="col">Requested Currency</th>
-                                                                <th scope="col">Received Amount</th>
-                                                                <th scope="col">Received Currency</th>
+                                                                <th scope="col">Sent Amount</th>
+                                                                <th scope="col">Sent Currency</th>
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
                                                                 <th scope="col">Agent ID</th>
+
+                                                                <th scope="col">Bank ID</th>
+                                                                <th scope="col">Sender Account No</th>
+                                                                <th scope="col">Receiver Account No</th>
+                                                                <th scope="col">Agent Comm.</th>
+                                                                <th scope="col">Merchant Comm.</th>
+                                                                <th scope="col">Status</th>
+                                                                <th scope="col">Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -763,6 +771,16 @@
                                                                 <td>2024-11-12 10:30:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>#AID1001</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12346</td>
@@ -779,6 +797,16 @@
                                                                 <td>2024-11-12 11:00:00</td>
                                                                 <td>2024-11-12 12:30:00</td>
                                                                 <td>#AID1002</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12347</td>
@@ -795,6 +823,16 @@
                                                                 <td>2024-11-12 09:15:00</td>
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>#AID1003</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12345</td>
@@ -811,6 +849,16 @@
                                                                 <td>2024-11-12 10:30:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>#AID1001</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12346</td>
@@ -827,6 +875,16 @@
                                                                 <td>2024-11-12 11:00:00</td>
                                                                 <td>2024-11-12 12:30:00</td>
                                                                 <td>#AID1002</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12347</td>
@@ -843,6 +901,16 @@
                                                                 <td>2024-11-12 09:15:00</td>
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>#AID1003</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12345</td>
@@ -859,6 +927,16 @@
                                                                 <td>2024-11-12 10:30:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>#AID1001</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12346</td>
@@ -875,6 +953,16 @@
                                                                 <td>2024-11-12 11:00:00</td>
                                                                 <td>2024-11-12 12:30:00</td>
                                                                 <td>#AID1002</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>#MO12347</td>
@@ -891,6 +979,16 @@
                                                                 <td>2024-11-12 09:15:00</td>
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>#AID1003</td>
+
+                                                                <td>#PGW56789</td>
+                                                                <td>#MID001</td>
+                                                                <td>Merchant A</td>
+                                                                <td>#CUST001</td>
+                                                                <td>bKash</td>
+                                                                <td>#BANK1234</td>
+                                                                <td>
+                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                </td>
                                                             </tr>
 
                                                         </tbody>
