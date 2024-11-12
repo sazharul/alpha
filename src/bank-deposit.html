@@ -712,13 +712,15 @@
                                 <!-- Search Bar, Filters, and Export Button -->
                                 <div class="row mb-3">
                                     <div class="col-md-4">
-                                        <div class="input-group rounded border bg-white">
-                                            <span class="input-group-text border-0 bg-white" id="search-addon">
-                                                <span class="mdi mdi-magnify search-widget-icon"></span>
-                                            </span>
-                                            <input type="text" class="form-control border-0 bg-white" placeholder="Search..." aria-label="Search" aria-describedby="search-addon">
+                                        <div class="position-relative">
+                                            <input type="text" id="searchInput" class="form-control" placeholder="Search by Order ID, Merchant, Customer..."
+                                                   style="padding-left: 35px;color: #000000">
+
+                                            <span class="mdi mdi-magnify search-widget-icon" style="position: absolute;top: 5px;left: 10px;font-size: 20px;"></span>
+
                                         </div>
                                     </div>
+
                                     <div class="col-md-3">
                                         <select id="filterBank" class="form-select" onchange="filterTable()">
                                             <option value="">Filter by Bank</option>
@@ -885,7 +887,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -911,7 +929,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -937,7 +971,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -963,7 +1013,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -989,7 +1055,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1015,7 +1097,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1041,7 +1139,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
 
