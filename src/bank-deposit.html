@@ -20,6 +20,14 @@
     <!--Swiper slider css-->
     <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
 
+
+    <!--datatable css-->
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"/>
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+
     <!-- Layout config Js -->
     <script src="/assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
@@ -633,8 +641,21 @@
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarBankManagement">
                                 <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item"><a href="/bank-deposit.html" class="nav-link">Deposit</a></li>
-                                    <li class="nav-item"><a href="/bank-withdraw.html" class="nav-link">Withdraw</a></li>
+                                    <!-- Deposit Section with Direct Links -->
+                                    <li class="nav-item">
+                                        <a href="/bank-deposit.html" class="nav-link">Deposit</a>
+                                        <ul class="nav nav-sm flex-column ms-3">
+                                            <li class="nav-item"><a href="/bank-deposit-p2c.html" class="nav-link">P2C</a></li>
+                                            <li class="nav-item"><a href="/bank-deposit-p2p.html" class="nav-link">P2P</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Withdraw Section with Direct Link -->
+                                    <li class="nav-item">
+                                        <a href="/bank-withdraw.html" class="nav-link">Withdraw</a>
+                                        <ul class="nav nav-sm flex-column ms-3">
+                                            <li class="nav-item"><a href="/bank-withdraw-p2p.html" class="nav-link">P2P</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -691,7 +712,12 @@
                                 <!-- Search Bar, Filters, and Export Button -->
                                 <div class="row mb-3">
                                     <div class="col-md-4">
-                                        <input type="text" id="searchInput" class="form-control" placeholder="Search by Order ID, Merchant, Customer..." onkeyup="filterTable()">
+                                        <div class="input-group rounded border bg-white">
+                                            <span class="input-group-text border-0 bg-white" id="search-addon">
+                                                <span class="mdi mdi-magnify search-widget-icon"></span>
+                                            </span>
+                                            <input type="text" class="form-control border-0 bg-white" placeholder="Search..." aria-label="Search" aria-describedby="search-addon">
+                                        </div>
                                     </div>
                                     <div class="col-md-3">
                                         <select id="filterBank" class="form-select" onchange="filterTable()">
@@ -719,25 +745,20 @@
                                         <div class="card">
                                             <div class="card-header align-items-center d-flex">
                                                 <h4 class="card-title mb-0 flex-grow-1">Deposits</h4>
-                                                <div class="flex-shrink-0">
-                                                    <button type="button" class="btn btn-soft-info btn-sm material-shadow-none">
-                                                        <i class="ri-file-list-3-line align-middle"></i> Generate Report
-                                                    </button>
-                                                </div>
                                             </div><!-- end card header -->
 
                                             <div class="card-body">
                                                 <div class="table-responsive table-card">
-                                                    <table class="table table-borderless table-centered align-middle table-nowrap mb-0">
+                                                    <table id="bank_deposit_table" class="table table-bordered dt-responsive nowrap table-striped align-middle" style="width:100%">
                                                         <thead class="text-muted table-light">
                                                             <tr>
-                                                                <th scope="col">Merchant Order ID</th>
-                                                                <th scope="col">PGW Order ID</th>
+                                                                <th scope="col">Order ID</th>
+                                                                <th scope="col">OXP ID</th>
                                                                 <th scope="col">Merchant ID</th>
                                                                 <th scope="col">Merchant</th>
                                                                 <th scope="col">Customer ID</th>
                                                                 <th scope="col">Bank</th>
-                                                                <th scope="col">Bank Transaction ID</th>
+                                                                <th scope="col">Txn ID</th>
                                                                 <th scope="col">Requested Amount</th>
                                                                 <th scope="col">Requested Currency</th>
                                                                 <th scope="col">Received Amount</th>
@@ -747,8 +768,8 @@
                                                                 <th scope="col">Agent ID</th>
 
                                                                 <th scope="col">Bank ID</th>
-                                                                <th scope="col">Sender Account No</th>
-                                                                <th scope="col">Receiver Account No</th>
+                                                                <th scope="col">Sender Account</th>
+                                                                <th scope="col">Receiver Account</th>
                                                                 <th scope="col">Agent Comm.</th>
                                                                 <th scope="col">Merchant Comm.</th>
                                                                 <th scope="col">Status</th>
@@ -779,10 +800,26 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
-
                                                             </tr>
+
                                                             <tr>
                                                                 <td>#MO12346</td>
                                                                 <td>#PGW56790</td>
@@ -806,7 +843,23 @@
                                                                 <td>bKash</td>
                                                                 <td>#BANK1234</td>
                                                                 <td>
-                                                                    <button class="btn btn-primary btn-sm" onclick="updateStatus()">Update Status</button>
+                                                                    <div class="dropdown d-inline-block">
+                                                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                                                                                aria-expanded="false">
+                                                                            <i class="ri-more-fill align-middle"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a>
+                                                                            </li>
+                                                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i>
+                                                                                Edit</a></li>
+                                                                            <li>
+                                                                                <a class="dropdown-item remove-item-btn">
+                                                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -1051,8 +1104,42 @@
     <!-- piecharts init -->
     <script src="/assets/js/pages/apexcharts-pie.init.js"></script>
 
+
+    <script src="/assets/code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--datatable js-->
+    <script src="/assets/cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="/assets/cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="/assets/js/pages/datatables.init.js"></script>
+
     <!-- App js -->
     <script src="/assets/js/app.js"></script>
+
+    <script>
+        $('#bank_deposit_table').DataTable({
+            dom: '<"row table-controls mb-3"<"col-md-4 d-flex align-items-center"l><"col-md-4 d-flex justify-content-center align-items-center"B><"col-md-4 d-flex justify-content-end align-items-center"f>>' +  // Controls row
+                '<"row"<"col-12"tr>>' +                          // Table row
+                '<"row"<"col-md-5"i><"col-md-7"p>>',            // Footer row with info and pagination
+
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+
+            initComplete: function () {
+                // Move the elements to the desired positions
+                $('#datatable_length').append($('.dataTables_length'));
+                $('#datatable_buttons').append($('.dt-buttons'));
+                $('#datatable_filter').append($('.dataTables_filter'));
+            }
+        });
+    </script>
+
 </body>
 
 </html>
