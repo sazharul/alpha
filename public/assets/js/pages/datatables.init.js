@@ -3,18 +3,22 @@ function initializeTables() {
         scrollY: "210px",
         scrollCollapse: !0,
         paging: !1
-    }), new DataTable("#scroll-horizontal", {scrollX: !0}), new DataTable("#alternative-pagination", {pagingType: "full_numbers"}), new DataTable("#fixed-header", {fixedHeader: !0}), new DataTable("#model-datatables", {
-        responsive: {
-            details: {
-                display: $.fn.dataTable.Responsive.display.modal({
-                    header: function (a) {
-                        a = a.data();
-                        return "Details for " + a[0] + " " + a[1]
-                    }
-                }), renderer: $.fn.dataTable.Responsive.renderer.tableAll({tableClass: "table"})
+    }),
+        new DataTable("#scroll-horizontal", {scrollX: !0}),
+        new DataTable("#alternative-pagination", {pagingType: "full_numbers"}),
+        new DataTable("#fixed-header", {fixedHeader: !0}),
+        new DataTable("#model-datatables", {
+            responsive: {
+                details: {
+                    display: $.fn.dataTable.Responsive.display.modal({
+                        header: function (a) {
+                            a = a.data();
+                            return "Details for " + a[0] + " " + a[1]
+                        }
+                    }), renderer: $.fn.dataTable.Responsive.renderer.tableAll({tableClass: "table"})
+                }
             }
-        }
-    }), new DataTable("#buttons-datatables", {
+        }), new DataTable("#buttons-datatables", {
         dom: "Bfrtip",
         buttons: ["copy", "csv", "excel", "print", "pdf"]
     }), new DataTable("#ajax-datatables", {ajax: "assets/json/datatable.json"});
