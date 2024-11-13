@@ -1,2 +1,15 @@
+#bank_deposit_table_length {
+    margin-top: 5px !important;
+}
 
-/*# sourceMappingURL=custom.min.css.map */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.text-right {
+    text-align: right;
+}
