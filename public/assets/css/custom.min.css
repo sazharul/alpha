@@ -47,6 +47,7 @@
 #bank_deposit_table tr th, #bank_deposit_table tr td {
     // norap
     white-space: nowrap;
+    text-align: center;
 }
 
 #bank_deposit_table tr td:nth-child(2) {
