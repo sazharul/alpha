@@ -10,6 +10,40 @@
     justify-content: flex-end;
 }
 
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: flex-end; /* Align elements to the right */
+    }
+
+    #bank_deposit_table_length {
+        order: -1; /* Ensure length selector stays on top */
+        margin-bottom: -5px;
+    }
+}
+
 .text-right {
     text-align: right;
+}
+
+.custome1_border {
+    display: inline-block;
+    width: calc(100% + 30px);
+    height: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #e9ebec;
+    margin-left: -15px;
+}
+
+#bank_deposit_table tr.even {
+    background-color: #FBFBFB; /* Light gray for even rows */
+}
+
+#bank_deposit_table tr.odd {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+#bank_deposit_table tr td:nth-child(2) {
+    color: #3F5289; /* Change to desired color */
 }

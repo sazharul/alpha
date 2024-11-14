@@ -26,7 +26,7 @@
     <!--datatable responsive css-->
     <link rel="stylesheet" href="/assets/cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
 
 
     <!-- Layout config Js -->
@@ -864,72 +864,82 @@
                                             </div><!-- end card header -->
 
                                             <div class="card-body">
-                                                <div class="row">
-                                                    <div class="row mb-3">
-                                                        <div class="col-md-4">
-                                                            <div class="position-relative">
-                                                                <input type="text" id="searchInput" class="form-control" placeholder="Search by Order ID, Merchant, Customer..."
-                                                                       style="padding-left: 35px;color: #000000">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-4 mb-2">
+                                                        <div class="position-relative">
+                                                            <input type="text" id="searchInput" class="form-control" placeholder="Search by Order ID, Merchant, Customer..."
+                                                                   style="padding-left: 35px;color: #000000">
 
-                                                                <span class="mdi mdi-magnify search-widget-icon"
-                                                                      style="position: absolute;top: 5px;left: 10px;font-size: 20px;"></span>
+                                                            <span class="mdi mdi-magnify search-widget-icon"
+                                                                  style="position: absolute;top: 5px;left: 10px;font-size: 20px;"></span>
 
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-md-3">
-                                                            <select id="filterBank" class="form-select" onchange="filterTable()">
-                                                                <option value="">Filter by Bank</option>
-                                                                <option value="bKash">bKash</option>
-                                                                <option value="Nagad">Nagad</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <select id="filterStatus" class="form-select" onchange="filterTable()">
-                                                                <option value="">Filter by Status</option>
-                                                                <option value="Paid">Paid</option>
-                                                                <option value="Unpaid">Unpaid</option>
-                                                                <option value="Pending">Pending</option>
-                                                            </select>
-                                                        </div>
-
-                                                        <div class="col-md-2 text-end">
-                                                            <button class="btn btn-primary" onclick="exportTableToCSV('transactions.csv')">
-                                                                Export
-                                                            </button>
                                                         </div>
                                                     </div>
+
+                                                    <div class="col-md-3 mb-2">
+                                                        <select id="filterBank" class="form-select" onchange="filterTable()">
+                                                            <option value="">Filter by Bank</option>
+                                                            <option value="bKash">bKash</option>
+                                                            <option value="Nagad">Nagad</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3 mb-2">
+                                                        <select id="filterStatus" class="form-select" onchange="filterTable()">
+                                                            <option value="">Filter by Status</option>
+                                                            <option value="Paid">Paid</option>
+                                                            <option value="Unpaid">Unpaid</option>
+                                                            <option value="Pending">Pending</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-2 mb-2 text-end">
+                                                        <button class="btn btn-primary" onclick="exportTableToCSV('transactions.csv')">
+                                                            Export
+                                                        </button>
+                                                    </div>
                                                 </div>
+
+                                                <div class="custome1_border"></div>
+
                                                 <div class="table-responsive table-card">
                                                     <table id="bank_deposit_table" class="table nowrap align-middle" style="width:100%">
-                                                        <thead class="text-muted table-light">
+                                                        <thead>
                                                             <tr>
-                                                                <th scope="col">Order ID</th>
-                                                                <th scope="col">OXP ID</th>
-                                                                <th scope="col">Merchant ID</th>
-                                                                <th scope="col">Merchant</th>
-                                                                <th scope="col">Customer ID</th>
-                                                                <th scope="col">Bank</th>
-                                                                <th scope="col">Txn ID</th>
-                                                                <th scope="col">Requested Amount</th>
-                                                                <!--                                                                <th scope="col">Requested Currency</th>-->
-                                                                <th scope="col">Received Amount</th>
-                                                                <!--                                                                <th scope="col">Received Currency</th>-->
-                                                                <th scope="col">Created On</th>
-                                                                <th scope="col">Last Updated</th>
-                                                                <th scope="col">Agent ID</th>
-
-                                                                <th scope="col">Bank ID</th>
-                                                                <th scope="col">Sender $</th>
-                                                                <th scope="col">Receiver $</th>
-                                                                <th scope="col">Agent Comm.</th>
-                                                                <th scope="col">Merchant Comm.</th>
-                                                                <th scope="col">Status</th>
-                                                                <th scope="col">Action</th>
+                                                                <th scope="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
+                                                                    </div>
+                                                                </th>
+                                                                <th scope="col" style="white-space: nowrap;">Order ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">OXP ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Merchant ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Merchant</th>
+                                                                <th scope="col" style="white-space: nowrap;">Customer ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Bank</th>
+                                                                <th scope="col" style="white-space: nowrap;">Txn ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Requested Amount</th>
+                                                                <!--                                                                <th scope="col" style="white-space: nowrap;">Requested Currency</th>-->
+                                                                <th scope="col" style="white-space: nowrap;">Received Amount</th>
+                                                                <!--                                                                <th scope="col" style="white-space: nowrap;">Received Currency</th>-->
+                                                                <th scope="col" style="white-space: nowrap;">Created On</th>
+                                                                <th scope="col" style="white-space: nowrap;">Last Updated</th>
+                                                                <th scope="col" style="white-space: nowrap;">Agent ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Bank ID</th>
+                                                                <th scope="col" style="white-space: nowrap;">Sender $</th>
+                                                                <th scope="col" style="white-space: nowrap;">Receiver $</th>
+                                                                <th scope="col" style="white-space: nowrap;">Agent Comm.</th>
+                                                                <th scope="col" style="white-space: nowrap;">Merchant Comm.</th>
+                                                                <th scope="col" style="white-space: nowrap;">Status</th>
+                                                                <th scope="col" style="white-space: nowrap;">Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12345</td>
                                                                 <td>#PGW56789</td>
                                                                 <td>#MID001</td>
@@ -962,6 +972,11 @@
                                                             </tr>
 
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12346</td>
                                                                 <td>#PGW56890</td>
                                                                 <td>#MID002</td>
@@ -989,6 +1004,11 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12347</td>
                                                                 <td>#PGW56891</td>
                                                                 <td>#MID003</td>
@@ -1016,6 +1036,11 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12348</td>
                                                                 <td>#PGW56892</td>
                                                                 <td>#MID004</td>
@@ -1043,6 +1068,11 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12349</td>
                                                                 <td>#PGW56893</td>
                                                                 <td>#MID005</td>
@@ -1070,6 +1100,11 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
                                                                 <td>#MO12350</td>
                                                                 <td>#PGW56894</td>
                                                                 <td>#MID006</td>
@@ -1175,7 +1210,6 @@
     <script src="/assets/js/app.js"></script>
 
     <script>
-
         $('#bank_deposit_table').DataTable({
             // "sDom": 'Rfrtlip',
             "dom": '<"top">rt<"bottom"<"d-flex justify-content-end text-right"lp><"clear">>',
