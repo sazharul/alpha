@@ -33,18 +33,18 @@
     width: calc(100% + 30px);
     height: 1px;
     margin-top: 7px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     border: 1px solid #e9ebec;
     margin-left: -15px;
 }
 
-#bank_deposit_table tr.even {
-    background-color: #FBFBFB; /* Light gray for even rows */
-}
+/*#bank_deposit_table tr.even {*/
+/*    background-color: #FBFBFB; !* Light gray for even rows *!*/
+/*}*/
 
-#bank_deposit_table tr.odd {
-    background-color: #ffffff; /* White for odd rows */
-}
+/*#bank_deposit_table tr.odd {*/
+/*    background-color: #ffffff; !* White for odd rows *!*/
+/*}*/
 
 #bank_deposit_table tr th, #bank_deposit_table tr td {
     white-space: nowrap;
