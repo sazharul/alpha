@@ -34,7 +34,7 @@
     height: 1px;
     margin-top: 7px;
     margin-bottom: 26px;
-    border: 1px solid #e9ebec;
+    border: 1px solid --vz-border-color;
     margin-left: -15px;
 }
 
