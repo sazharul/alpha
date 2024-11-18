@@ -24,6 +24,7 @@ export default defineConfig({
                 dashboard: path.resolve(__dirname, 'src', 'dashboard.html'), // Specify the main entry point
                 bank_deposit: path.resolve(__dirname, 'src', 'bank-deposit.html'), // Specify the main entry point
                 p2c: path.resolve(__dirname, 'src', 'p2c.html'), // Specify the main entry point
+                p2p: path.resolve(__dirname, 'src', 'p2p.html'), // Specify the main entry point
                 bank_withdraw: path.resolve(__dirname, 'src', 'bank-withdraw.html'), // Specify the main entry point
             },
         },
