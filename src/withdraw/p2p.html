@@ -328,7 +328,7 @@
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarWithdrawals">
                                 <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item"><a href="/withdraw/p2p.html" class="nav-link">P2P</a></li>
+                                    <li class="nav-item"><a href="/p2p.html" class="nav-link">P2P</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -447,12 +447,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                                <h4 class="mb-sm-0">P2C</h4>
+                                <h4 class="mb-sm-0">P2P</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Deposit</a></li>
-                                        <li class="breadcrumb-item active">P2C</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Withdraw</a></li>
+                                        <li class="breadcrumb-item active">P2P</li>
                                     </ol>
                                 </div>
 
@@ -495,7 +495,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Deposit</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Withdrawals</p>
                                         </div>
                                     </div>
 
@@ -520,7 +520,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Deposit Count</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Withdrawal Count</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -543,7 +543,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">TOTAL PENDING</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Pending</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -592,9 +592,11 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header align-items-center d-flex">
-                                                <h4 class="card-title mb-0 flex-grow-1">Deposits</h4>
+                                                <h4 class="card-title mb-0 flex-grow-1">Withdraw</h4>
 
-                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i class="ri-add-line align-bottom me-1"></i> Add Deposits</button>
+                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i
+                                                        class="ri-add-line align-bottom me-1"></i> Add Withdraw
+                                                </button>
                                             </div>
 
                                             <div class="card-body">
@@ -650,9 +652,8 @@
                                                                 <th scope="col">Merchant</th>
                                                                 <th scope="col">Customer ID</th>
                                                                 <th scope="col">Bank</th>
-                                                                <th scope="col">Txn ID</th>
                                                                 <th scope="col">Requested Amount</th>
-                                                                <th scope="col">Received Amount</th>
+                                                                <th scope="col">Sent Amount</th>
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
                                                                 <th scope="col">Agent ID</th>
@@ -661,6 +662,7 @@
                                                                 <th scope="col">Receiver Account</th>
                                                                 <th scope="col">Agent Comm.</th>
                                                                 <th scope="col">Merchant Comm.</th>
+                                                                <th scope="col">Txn ID</th>
                                                                 <th scope="col">Status</th>
                                                                 <th scope="col">Action</th>
                                                             </tr>
@@ -688,8 +690,16 @@
                                                                 <td>#SEND1234</td>
                                                                 <td>#REC1234</td>
                                                                 <td>$10.00</td>
-                                                                <td>$20.00</td>
-                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -720,8 +730,16 @@
                                                                 <td>#SEND5678</td>
                                                                 <td>#REC5678</td>
                                                                 <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>                                                   <option value="completed">Completed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -752,8 +770,16 @@
                                                                 <td>#SEND9101</td>
                                                                 <td>#REC9101</td>
                                                                 <td>$15.00</td>
-                                                                <td>$30.00</td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -784,8 +810,16 @@
                                                                 <td>#SEND1234</td>
                                                                 <td>#REC1234</td>
                                                                 <td>$10.00</td>
-                                                                <td>$20.00</td>
-                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -816,8 +850,16 @@
                                                                 <td>#SEND5678</td>
                                                                 <td>#REC5678</td>
                                                                 <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -848,8 +890,16 @@
                                                                 <td>#SEND9101</td>
                                                                 <td>#REC9101</td>
                                                                 <td>$15.00</td>
-                                                                <td>$30.00</td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -880,8 +930,16 @@
                                                                 <td>#SEND1234</td>
                                                                 <td>#REC1234</td>
                                                                 <td>$10.00</td>
-                                                                <td>$20.00</td>
-                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -912,8 +970,16 @@
                                                                 <td>#SEND5678</td>
                                                                 <td>#REC5678</td>
                                                                 <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -944,8 +1010,16 @@
                                                                 <td>#SEND9101</td>
                                                                 <td>#REC9101</td>
                                                                 <td>$15.00</td>
-                                                                <td>$30.00</td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -977,8 +1051,16 @@
                                                                 <td>#SEND5678</td>
                                                                 <td>#REC5678</td>
                                                                 <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>
+                                                                    <input class="form-control" type="text" style="width: 100px;"/>
+                                                                </td>
+                                                                <td>
+                                                                    <select class="form-select" name="status_check" style="min-width: 140px;">
+                                                                        <option value="pending" selected>Pending</option>
+                                                                        <option value="successful">Successful</option>
+                                                                        <option value="failed">Failed</option>
+                                                                    </select>
+                                                                </td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>

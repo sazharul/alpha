@@ -26,6 +26,8 @@ export default defineConfig({
                 p2c: path.resolve(__dirname, 'src', 'p2c.html'), // Specify the main entry point
                 p2p: path.resolve(__dirname, 'src', 'p2p.html'), // Specify the main entry point
                 bank_withdraw: path.resolve(__dirname, 'src', 'bank-withdraw.html'), // Specify the main entry point
+                withdraw_p2p: path.resolve(__dirname, 'src/withdraw', 'p2p.html'), // Specify the main entry point
+                sms_management: path.resolve(__dirname, 'src', 'sms-management.html'), // Specify the main entry point
             },
         },
     },
