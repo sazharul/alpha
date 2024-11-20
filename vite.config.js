@@ -1,13 +1,16 @@
 import path from 'path';
 import {defineConfig} from 'vite';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
+    plugins: [svgr()], // Enable the svgr plugin
     base: '/', // Base path for development and production
     root: path.resolve(__dirname, 'src'), // Set the root to 'src'
     publicDir: path.resolve(__dirname, 'public'), // Set the public directory for static files
     resolve: {
         alias: {
             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'), // Alias for bootstrap
+            '@': path.resolve(__dirname, 'src'), // Alias for src
         },
     },
     server: {
