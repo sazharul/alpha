@@ -441,12 +441,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                                <h4 class="mb-sm-0">P2C</h4>
+                                <h4 class="mb-sm-0">Prepayment</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Deposit</a></li>
-                                        <li class="breadcrumb-item active">P2C</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Prepayment</a></li>
                                     </ol>
                                 </div>
 
@@ -489,13 +488,13 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Deposit</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Prepayments (USDT)</p>
                                         </div>
                                     </div>
 
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <div>
-                                            <h4 class="fs-22 fw-semibold ff-secondary mb-0">৳<span class="counter-value" data-target="559.25">559.25</span>k</h4>
+                                            <h4 class="fs-22 fw-semibold ff-secondary mb-0"><span class="counter-value" data-target="559.25">559.25</span>k</h4>
                                         </div>
                                         <div class="avatar-sm flex-shrink-0">
                                             <span class="avatar-title bg-success-subtle rounded fs-3 d-flex align-items-center justify-content-center">
@@ -514,7 +513,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Deposit Count</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Prepayments (BDT)</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -537,12 +536,12 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">TOTAL PENDING</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Prepayment Count</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
                                         <div>
-                                            <h4 class="fs-22 fw-semibold ff-secondary mb-0">$<span class="counter-value" data-target="559.25">559.25</span>k</h4>
+                                            <h4 class="fs-22 fw-semibold ff-secondary mb-0"><span class="counter-value" data-target="559.25">559.25</span>k</h4>
                                         </div>
                                         <div class="avatar-sm flex-shrink-0">
                                             <span class="avatar-title bg-success-subtle rounded fs-3 d-flex align-items-center justify-content-center">
@@ -560,7 +559,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Conversion Rate</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Exchange Rate</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -586,9 +585,14 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header align-items-center d-flex">
-                                                <h4 class="card-title mb-0 flex-grow-1">Deposits</h4>
+                                                <h4 class="card-title mb-0 flex-grow-1">Prepayment</h4>
 
-                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i class="ri-add-line align-bottom me-1"></i> Add Deposits</button>
+                                                <button type="button" class="btn btn-info create-btn" style="margin-right: 15px;" data-bs-toggle="modal"
+                                                        data-bs-target="#api-key-modal"><i class="ri-add-line align-bottom me-1"></i> Exchange Rate
+                                                </button>
+                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i
+                                                        class="ri-add-line align-bottom me-1"></i> Add Prepayment
+                                                </button>
                                             </div>
 
                                             <div class="card-body">
@@ -639,22 +643,14 @@
                                                                     </div>
                                                                 </th>
                                                                 <th scope="col">Order ID</th>
-                                                                <th scope="col">OXP ID</th>
-                                                                <th scope="col">Merchant ID</th>
-                                                                <th scope="col">Merchant</th>
-                                                                <th scope="col">Customer ID</th>
-                                                                <th scope="col">Bank</th>
-                                                                <th scope="col">Txn ID</th>
-                                                                <th scope="col">Requested Amount</th>
-                                                                <th scope="col">Received Amount</th>
-                                                                <th scope="col">Created On</th>
-                                                                <th scope="col">Last Updated</th>
                                                                 <th scope="col">Agent ID</th>
-                                                                <th scope="col">Bank ID</th>
-                                                                <th scope="col">Sender Account</th>
-                                                                <th scope="col">Receiver Account</th>
-                                                                <th scope="col">Agent Comm.</th>
-                                                                <th scope="col">Merchant Comm.</th>
+                                                                <th scope="col">Transaction Hash</th>
+                                                                <th scope="col">Amount (USDT)</th>
+                                                                <th scope="col">Sender Address</th>
+                                                                <th scope="col">Receiver Address</th>
+                                                                <th scope="col">Created On</th>
+                                                                <th scope="col">Exchange Rate</th>
+                                                                <th scope="col">Amount (BDT)</th>
                                                                 <th scope="col">Status</th>
                                                                 <th scope="col">Action</th>
                                                             </tr>
@@ -666,23 +662,39 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12345</td>
-                                                                <td>#PGW56789</td>
-                                                                <td>#MID001</td>
-                                                                <td>Merchant A</td>
-                                                                <td>#CUST001</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK1234</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-12 10:30:00</td>
-                                                                <td>2024-11-12 12:00:00</td>
-                                                                <td>#AID1001</td>
-                                                                <td>#BK1001</td>
-                                                                <td>#SEND1234</td>
-                                                                <td>#REC1234</td>
-                                                                <td>$10.00</td>
-                                                                <td>$20.00</td>
+                                                                <td>OD123456</td>
+                                                                <td>AG98765</td>
+                                                                <td>HASH001XYZ</td>
+                                                                <td>100.5</td>
+                                                                <td>1A2B3C4D5E</td>
+                                                                <td>9Z8Y7X6W5V</td>
+                                                                <td>2024-11-20 10:30:00</td>
+                                                                <td>110.5</td>
+                                                                <td>11152.75</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Completed</span></td>
+                                                                <td>
+                                                                    <div class="action-buttons">
+                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>OD123457</td>
+                                                                <td>AG98766</td>
+                                                                <td>HASH002XYZ</td>
+                                                                <td>250.75</td>
+                                                                <td>1A2B3C4D5F</td>
+                                                                <td>9Z8Y7X6W5U</td>
+                                                                <td>2024-11-20 11:00:00</td>
+                                                                <td>110.6</td>
+                                                                <td>27707.45</td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
@@ -695,27 +707,19 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12346</td>
-                                                                <td>#PGW56790</td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>#CUST002</td>
-                                                                <td>Rocket</td>
-                                                                <td>#BANK5678</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-13 11:00:00</td>
-                                                                <td>2024-11-13 12:30:00</td>
-                                                                <td>#AID1002</td>
-                                                                <td>#BK1002</td>
-                                                                <td>#SEND5678</td>
-                                                                <td>#REC5678</td>
-                                                                <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>OD123458</td>
+                                                                <td>AG98767</td>
+                                                                <td>HASH003XYZ</td>
+                                                                <td>500.0</td>
+                                                                <td>1A2B3C4D5G</td>
+                                                                <td>9Z8Y7X6W5T</td>
+                                                                <td>2024-11-20 12:00:00</td>
+                                                                <td>110.7</td>
+                                                                <td>55350.0</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Completed</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -727,26 +731,18 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12347</td>
-                                                                <td>#PGW56791</td>
-                                                                <td>#MID003</td>
-                                                                <td>Merchant C</td>
-                                                                <td>#CUST003</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK9101</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-14 09:45:00</td>
-                                                                <td>2024-11-14 11:15:00</td>
-                                                                <td>#AID1003</td>
-                                                                <td>#BK1003</td>
-                                                                <td>#SEND9101</td>
-                                                                <td>#REC9101</td>
-                                                                <td>$15.00</td>
-                                                                <td>$30.00</td>
+                                                                <td>OD123459</td>
+                                                                <td>AG98768</td>
+                                                                <td>HASH004XYZ</td>
+                                                                <td>50.25</td>
+                                                                <td>1A2B3C4D5H</td>
+                                                                <td>9Z8Y7X6W5S</td>
+                                                                <td>2024-11-20 13:00:00</td>
+                                                                <td>110.8</td>
+                                                                <td>5560.2</td>
                                                                 <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
@@ -762,23 +758,15 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12345</td>
-                                                                <td>#PGW56789</td>
-                                                                <td>#MID001</td>
-                                                                <td>Merchant A</td>
-                                                                <td>#CUST001</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK1234</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-12 10:30:00</td>
-                                                                <td>2024-11-12 12:00:00</td>
-                                                                <td>#AID1001</td>
-                                                                <td>#BK1001</td>
-                                                                <td>#SEND1234</td>
-                                                                <td>#REC1234</td>
-                                                                <td>$10.00</td>
-                                                                <td>$20.00</td>
+                                                                <td>OD123460</td>
+                                                                <td>AG98769</td>
+                                                                <td>HASH005XYZ</td>
+                                                                <td>300.0</td>
+                                                                <td>1A2B3C4D5I</td>
+                                                                <td>9Z8Y7X6W5R</td>
+                                                                <td>2024-11-20 14:00:00</td>
+                                                                <td>110.9</td>
+                                                                <td>33270.0</td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
@@ -791,27 +779,19 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12346</td>
-                                                                <td>#PGW56790</td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>#CUST002</td>
-                                                                <td>Rocket</td>
-                                                                <td>#BANK5678</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-13 11:00:00</td>
-                                                                <td>2024-11-13 12:30:00</td>
-                                                                <td>#AID1002</td>
-                                                                <td>#BK1002</td>
-                                                                <td>#SEND5678</td>
-                                                                <td>#REC5678</td>
-                                                                <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>OD123456</td>
+                                                                <td>AG98765</td>
+                                                                <td>HASH001XYZ</td>
+                                                                <td>100.5</td>
+                                                                <td>1A2B3C4D5E</td>
+                                                                <td>9Z8Y7X6W5V</td>
+                                                                <td>2024-11-20 10:30:00</td>
+                                                                <td>110.5</td>
+                                                                <td>11152.75</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Completed</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
                                                                         <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
@@ -823,26 +803,66 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12347</td>
-                                                                <td>#PGW56791</td>
-                                                                <td>#MID003</td>
-                                                                <td>Merchant C</td>
-                                                                <td>#CUST003</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK9101</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-14 09:45:00</td>
-                                                                <td>2024-11-14 11:15:00</td>
-                                                                <td>#AID1003</td>
-                                                                <td>#BK1003</td>
-                                                                <td>#SEND9101</td>
-                                                                <td>#REC9101</td>
-                                                                <td>$15.00</td>
-                                                                <td>$30.00</td>
+                                                                <td>OD123457</td>
+                                                                <td>AG98766</td>
+                                                                <td>HASH002XYZ</td>
+                                                                <td>250.75</td>
+                                                                <td>1A2B3C4D5F</td>
+                                                                <td>9Z8Y7X6W5U</td>
+                                                                <td>2024-11-20 11:00:00</td>
+                                                                <td>110.6</td>
+                                                                <td>27707.45</td>
+                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>
+                                                                    <div class="action-buttons">
+                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>OD123458</td>
+                                                                <td>AG98767</td>
+                                                                <td>HASH003XYZ</td>
+                                                                <td>500.0</td>
+                                                                <td>1A2B3C4D5G</td>
+                                                                <td>9Z8Y7X6W5T</td>
+                                                                <td>2024-11-20 12:00:00</td>
+                                                                <td>110.7</td>
+                                                                <td>55350.0</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Completed</span></td>
+                                                                <td>
+                                                                    <div class="action-buttons">
+                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
+                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                                                    </div>
+                                                                </td>
+                                                                <td>OD123459</td>
+                                                                <td>AG98768</td>
+                                                                <td>HASH004XYZ</td>
+                                                                <td>50.25</td>
+                                                                <td>1A2B3C4D5H</td>
+                                                                <td>9Z8Y7X6W5S</td>
+                                                                <td>2024-11-20 13:00:00</td>
+                                                                <td>110.8</td>
+                                                                <td>5560.2</td>
                                                                 <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
@@ -858,23 +878,15 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MO12345</td>
-                                                                <td>#PGW56789</td>
-                                                                <td>#MID001</td>
-                                                                <td>Merchant A</td>
-                                                                <td>#CUST001</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK1234</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-12 10:30:00</td>
-                                                                <td>2024-11-12 12:00:00</td>
-                                                                <td>#AID1001</td>
-                                                                <td>#BK1001</td>
-                                                                <td>#SEND1234</td>
-                                                                <td>#REC1234</td>
-                                                                <td>$10.00</td>
-                                                                <td>$20.00</td>
+                                                                <td>OD123460</td>
+                                                                <td>AG98769</td>
+                                                                <td>HASH005XYZ</td>
+                                                                <td>300.0</td>
+                                                                <td>1A2B3C4D5I</td>
+                                                                <td>9Z8Y7X6W5R</td>
+                                                                <td>2024-11-20 14:00:00</td>
+                                                                <td>110.9</td>
+                                                                <td>33270.0</td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons">
@@ -884,106 +896,7 @@
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
-                                                                    </div>
-                                                                </td>
-                                                                <td>#MO12346</td>
-                                                                <td>#PGW56790</td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>#CUST002</td>
-                                                                <td>Rocket</td>
-                                                                <td>#BANK5678</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-13 11:00:00</td>
-                                                                <td>2024-11-13 12:30:00</td>
-                                                                <td>#AID1002</td>
-                                                                <td>#BK1002</td>
-                                                                <td>#SEND5678</td>
-                                                                <td>#REC5678</td>
-                                                                <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
-                                                                <td>
-                                                                    <div class="action-buttons">
-                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
-                                                                    </div>
-                                                                </td>
-                                                                <td>#MO12347</td>
-                                                                <td>#PGW56791</td>
-                                                                <td>#MID003</td>
-                                                                <td>Merchant C</td>
-                                                                <td>#CUST003</td>
-                                                                <td>bKash</td>
-                                                                <td>#BANK9101</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-14 09:45:00</td>
-                                                                <td>2024-11-14 11:15:00</td>
-                                                                <td>#AID1003</td>
-                                                                <td>#BK1003</td>
-                                                                <td>#SEND9101</td>
-                                                                <td>#REC9101</td>
-                                                                <td>$15.00</td>
-                                                                <td>$30.00</td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
-                                                                <td>
-                                                                    <div class="action-buttons">
-                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
-                                                                    </div>
-                                                                </td>
-                                                                <td>#MO12346</td>
-                                                                <td>#PGW56790</td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>#CUST002</td>
-                                                                <td>Rocket</td>
-                                                                <td>#BANK5678</td>
-                                                                <td>USD</td>
-                                                                <td>USD</td>
-                                                                <td>2024-11-13 11:00:00</td>
-                                                                <td>2024-11-13 12:30:00</td>
-                                                                <td>#AID1002</td>
-                                                                <td>#BK1002</td>
-                                                                <td>#SEND5678</td>
-                                                                <td>#REC5678</td>
-                                                                <td>$7.50</td>
-                                                                <td>$15.00</td>
-                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
-                                                                <td>
-                                                                    <div class="action-buttons">
-                                                                        <a href="#!" class="action-btn"><i class="ri-eye-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn"><i class="ri-pencil-fill align-bottom me-1"></i></a>
-                                                                        <a href="#!" class="action-btn text-danger"><i class="ri-delete-bin-fill align-bottom me-1"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <!-- Repeat similar pattern for remaining rows -->
                                                         </tbody>
-
                                                     </table>
 
                                                 </div>
