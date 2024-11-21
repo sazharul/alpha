@@ -584,16 +584,29 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
-                                            <div class="card-header align-items-center d-flex">
-                                                <h4 class="card-title mb-0 flex-grow-1">Prepayment</h4>
+                                            <div class="card-header align-items-center d-flex flex-wrap">
+                                                <h4 class="card-title mb-2 flex-grow-1">Prepayment</h4>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <!-- Button 1 -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-info create-btn btn-sm"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#api-key-modal">
+                                                        <i class="ri-add-line align-bottom me-1"></i> Exchange Rate
+                                                    </button>
 
-                                                <button type="button" class="btn btn-info create-btn" style="margin-right: 15px;" data-bs-toggle="modal"
-                                                        data-bs-target="#api-key-modal"><i class="ri-add-line align-bottom me-1"></i> Exchange Rate
-                                                </button>
-                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i
-                                                        class="ri-add-line align-bottom me-1"></i> Add Prepayment
-                                                </button>
+                                                    <!-- Button 2 -->
+                                                    <button
+                                                            type="button"
+                                                            class="btn btn-success create-btn btn-sm"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#api-key-modal">
+                                                        <i class="ri-add-line align-bottom me-1"></i> Add Prepayment
+                                                    </button>
+                                                </div>
                                             </div>
+
 
                                             <div class="card-body">
                                                 <div class="row">
