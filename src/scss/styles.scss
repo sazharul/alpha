@@ -1,2 +1,15 @@
 @import "variable";
 //  update new code
+
+.action-buttons {
+    display: flex;
+    align-items: center; /* Vertically center elements */
+    gap: 0.5rem; /* Optional: Adjust spacing between elements */
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
