@@ -32,6 +32,7 @@ export default defineConfig({
                 withdraw_p2p: path.resolve(__dirname, 'src/withdraw', 'p2p.html'), // Specify the main entry point
                 sms_management: path.resolve(__dirname, 'src', 'sms-management.html'), // Specify the main entry point
                 prepayment: path.resolve(__dirname, 'src', 'prepayment.html'), // Specify the main entry point
+                merchant_management: path.resolve(__dirname, 'src', 'merchant-management.html'), // Specify the main entry point
             },
         },
     },
