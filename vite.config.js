@@ -33,6 +33,7 @@ export default defineConfig({
                 sms_management: path.resolve(__dirname, 'src', 'sms-management.html'), // Specify the main entry point
                 prepayment: path.resolve(__dirname, 'src', 'prepayment.html'), // Specify the main entry point
                 merchant_management: path.resolve(__dirname, 'src', 'merchant-management.html'), // Specify the main entry point
+                merchant_settings: path.resolve(__dirname, 'src', 'merchant-settings.html'), // Specify the main entry point
             },
         },
     },
