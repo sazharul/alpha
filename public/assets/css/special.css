@@ -1,0 +1,84 @@
+/* General container to align buttons */
+.custom-button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+}
+
+/* General button style */
+.custom-button, .custom-dropdown-button {
+    background-color: #f2eded; /* Light gray background */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded edges */
+    /* Button padding */
+    padding: 10px 20px 5px;
+    font-size: 16px; /* Font size */
+    color: #000; /* Text color */
+    text-align: center; /* Center align text */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block;
+    position: relative; /* For dropdown positioning */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-dropdown-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 10px 10px 10px 5px;
+}
+
+/* Hover effect for all buttons */
+.custom-button:hover, .custom-dropdown-button:hover {
+    background-color: #ddd; /* Darker gray on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* Dropdown button specific styling */
+.custom-dropdown-button span {
+    display: inline-block;
+    margin-right: 5px; /* Space between text and icon */
+}
+
+/* Dropdown arrow styling */
+.custom-dropdown-button::after {
+    content: "▼"; /* Downward arrow */
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Dropdown content styling */
+.custom-dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    background-color: #fff; /* White background for dropdown */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded edges for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    padding: 10px 0; /* Padding for dropdown items */
+    z-index: 10; /* Ensure dropdown is on top */
+    width: 150px; /* Fixed width for dropdown */
+}
+
+/* Dropdown items */
+.custom-dropdown-content p {
+    padding: 10px 20px; /* Padding inside each item */
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for dropdown items */
+.custom-dropdown-content p:hover {
+    background-color: #f2eded; /* Light gray on hover */
+}
+
+/* Show dropdown on hover */
+.custom-dropdown-button:hover .custom-dropdown-content {
+    display: block; /* Show dropdown */
+}
