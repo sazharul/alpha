@@ -1,15 +1,3 @@
-/*.api_key_section .form-control {*/
-/*    border-color: #000000;*/
-/*    color: #000000;*/
-/*}*/
-
-
-/*.api_key_section .btn-outline-secondary {*/
-/*    color: #000000;*/
-/*    border-color: #000000;*/
-/*}*/
-
-
 .currency_conversion .card {
     border: 1px solid #dddddd;
 }
@@ -29,4 +17,18 @@
     padding: 10px;
     border-color: #ced4da;
     border-radius: 2px;
+}
+
+/* Specific override for number input type within .currency_conversion */
+.currency_conversion .form-control[type="number"] {
+    -webkit-appearance: textfield !important;  /* Show spinner in Webkit browsers (Chrome/Safari) */
+    -moz-appearance: textfield !important;     /* Show spinner in Firefox */
+    appearance: textfield !important;          /* Show spinner in other browsers */
+}
+
+/* Ensure the spinner doesn't get hidden in Webkit browsers */
+.currency_conversion .form-control[type="number"]::-webkit-outer-spin-button,
+.currency_conversion .form-control[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: auto !important;  /* Show the spinner in Webkit browsers */
+    margin: 0 !important;
 }
