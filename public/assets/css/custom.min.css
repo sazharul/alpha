@@ -53,3 +53,23 @@
 #bank_deposit_table tr td:nth-child(2) {
     color: #3F5289; /* Change to desired color */
 }
+
+.currency_conversion_input_percentage {
+    width: 35%;
+}
+.currency_conversion_input_percentage .input-container {
+    position: relative;
+    width: 98%;
+    float: right;
+}
+
+.currency_conversion_input_percentage .input-container input {
+    padding: 10px;
+}
+
+.currency_conversion .input-container .suffix {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-size: 16px;
+}
