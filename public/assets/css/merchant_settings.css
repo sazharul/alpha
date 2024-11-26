@@ -2,42 +2,16 @@
     border-color: #000000;
     color: #000000;
 }
-.currency_conversion .btn-secondary,
-.ip_witelisting .btn-secondary,
-.api_key_section .btn-secondary {
-    background-color: #B1B1B1;
-    border-color: #B1B1B1;
-    color: #000000;
-}
+
 
 .api_key_section .btn-outline-secondary {
     color: #000000;
     border-color: #000000;
 }
 
-.ip_witelisting .select2-selection__choice {
-    background-color: #000000 !important;
-}
-
-.ip_witelisting .select2-selection--multiple {
-    border-color: #000000 !important;
-}
 
 .currency_conversion .card {
     border: 1px solid #000000;
-}
-
-.currency_conversion .card-header {
-    background: #F2F2F2;
-    color: #000000;
-
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26.63px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .currency_conversion .conversion_label {
