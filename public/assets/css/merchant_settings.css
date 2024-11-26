@@ -19,16 +19,50 @@
     border-radius: 2px;
 }
 
-/* Specific override for number input type within .currency_conversion */
+
+
+
+/* General reset for consistent behavior across browsers */
 .currency_conversion .form-control[type="number"] {
-    -webkit-appearance: textfield !important;  /* Show spinner in Webkit browsers (Chrome/Safari) */
-    -moz-appearance: textfield !important;     /* Show spinner in Firefox */
-    appearance: textfield !important;          /* Show spinner in other browsers */
+    -webkit-appearance: none !important; /* Disable default spinner styles in Chrome/Safari */
+    -moz-appearance: textfield !important; /* Disable default spinner styles in Firefox */
+    appearance: textfield !important; /* Ensure compatibility for all browsers */
+    position: relative;
 }
 
-/* Ensure the spinner doesn't get hidden in Webkit browsers */
-.currency_conversion .form-control[type="number"]::-webkit-outer-spin-button,
-.currency_conversion .form-control[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: auto !important;  /* Show the spinner in Webkit browsers */
-    margin: 0 !important;
+/* Always show spinners in Chrome/Safari */
+.currency_conversion .form-control[type="number"]::-webkit-inner-spin-button,
+.currency_conversion .form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: auto !important; /* Force default spinners */
+    display: block !important; /* Ensure visibility */
+    margin: 0 !important; /* Reset margin */
+    opacity: 1; /* Ensure spinners are fully visible */
+    pointer-events: auto; /* Allow user interaction */
 }
+
+/* Remove any visibility toggle on hover or focus in Chrome/Safari */
+.currency_conversion .form-control[type="number"]:hover::-webkit-inner-spin-button,
+.currency_conversion .form-control[type="number"]:hover::-webkit-outer-spin-button,
+.currency_conversion .form-control[type="number"]:focus::-webkit-inner-spin-button,
+.currency_conversion .form-control[type="number"]:focus::-webkit-outer-spin-button {
+    opacity: 1; /* Keep spinner visible */
+}
+
+/* Force spinners to always appear in Firefox */
+.currency_conversion .form-control[type="number"] {
+    -moz-appearance: textfield !important; /* Ensure spinner visibility */
+}
+
+/* Add pseudo-elements for spinners (fallback for unsupported cases) */
+.currency_conversion .form-control[type="number"]:before,
+.currency_conversion .form-control[type="number"]:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 10px; /* Adjust spinner position */
+    background: url('spinner-icon.svg') no-repeat center; /* Custom spinner icon (optional) */
+    pointer-events: none; /* Ensure it does not interfere */
+}
+
+
