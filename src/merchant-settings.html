@@ -476,146 +476,152 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-wrap gap-4 currency_conversion">
+                    <div class="row currency_conversion">
                         <!-- Currency Conversion -->
-                        <div class="card" style="flex: 1;">
-                            <div class="card-header">Currency Conversion</div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="mb-3 d-flex justify-content-between">
-                                    <div class="currency" style="width: 60%; text-align: left;">Currency</div>
-                                    <div class="rate" style="width: 35%; text-align: left;">Rate</div>
-                                </div>
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <div class="card-header">Currency Conversion</div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-3 d-flex justify-content-between">
+                                        <div class="currency" style="width: 60%; text-align: left;">Currency</div>
+                                        <div class="rate" style="width: 35%; text-align: left;">Rate</div>
+                                    </div>
 
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <label class="me-2 conversion_label">BDT</label>
-                                    <input type="number" class="form-control conversion_input" value="1">
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <label class="me-2 conversion_label">BDT</label>
+                                        <input type="number" class="form-control conversion_input" value="1">
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <label class="me-2 conversion_label">USD</label>
+                                        <input type="number" class="form-control conversion_input" value="125">
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <label class="me-2 conversion_label">EUR</label>
+                                        <input type="number" class="form-control conversion_input" value="127">
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <label class="me-2 conversion_label">INR</label>
+                                        <input type="number" class="form-control conversion_input" value="2">
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <label class="me-2 conversion_label">PKR</label>
+                                        <input type="number" class="form-control conversion_input" value="2">
+                                    </div>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <label class="me-2 conversion_label">USD</label>
-                                    <input type="number" class="form-control conversion_input" value="125">
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary w-100">Update</button>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <label class="me-2 conversion_label">EUR</label>
-                                    <input type="number" class="form-control conversion_input" value="127">
-                                </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <label class="me-2 conversion_label">INR</label>
-                                    <input type="number" class="form-control conversion_input" value="2">
-                                </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <label class="me-2 conversion_label">PKR</label>
-                                    <input type="number" class="form-control conversion_input" value="2">
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button class="btn btn-primary w-100">Update</button>
                             </div>
                         </div>
 
                         <!-- Deposit -->
-                        <div class="card" style="flex: 1;">
-                            <div class="card-header">Deposit</div>
-                            <div class="card-body d-flex flex-column">
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <div class="card-header">Deposit</div>
+                                <div class="card-body d-flex flex-column">
 
-                                <div class="mb-3 d-flex justify-content-between">
-                                    <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                    <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                </div>
+                                    <div class="mb-3 d-flex justify-content-between">
+                                        <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
+                                        <div class="rate" style="width: 35%; text-align: left;">Deal</div>
+                                    </div>
 
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="bkashP2C" class="form-check-input">
-                                        <label for="bkashP2C" class="form-check-label">bkash P2C</label>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="bkashP2C" class="form-check-input">
+                                            <label for="bkashP2C" class="form-check-label">bkash P2C</label>
+                                        </div>
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                <span class="suffix">%</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="3.00" />
-                                            <span class="suffix">%</span>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="nagodP2C" class="form-check-input">
+                                            <label for="nagodP2C" class="form-check-label">Nagod P2C</label>
+                                        </div>
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                <span class="suffix">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="bkashP2P" class="form-check-input">
+                                            <label for="bkashP2P" class="form-check-label">bkash P2P</label>
+                                        </div>
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                <span class="suffix">%</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="nagodP2C" class="form-check-input">
-                                        <label for="nagodP2C" class="form-check-label">Nagod P2C</label>
-                                    </div>
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="3.00" />
-                                            <span class="suffix">%</span>
-                                        </div>
-                                    </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary w-100">Update</button>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="bkashP2P" class="form-check-input">
-                                        <label for="bkashP2P" class="form-check-label">bkash P2P</label>
-                                    </div>
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="1.50" />
-                                            <span class="suffix">%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button class="btn btn-primary w-100">Update</button>
                             </div>
                         </div>
 
                         <!-- Withdraw -->
-                        <div class="card" style="flex: 1;">
-                            <div class="card-header">Withdraw</div>
-                            <div class="card-body d-flex flex-column">
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <div class="card-header">Withdraw</div>
+                                <div class="card-body d-flex flex-column">
 
-                                <div class="mb-3 d-flex justify-content-between">
-                                    <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                    <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                </div>
-
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="bkashWP2P" class="form-check-input">
-                                        <label for="bkashWP2P" class="form-check-label">bkash_W P2P</label>
+                                    <div class="mb-3 d-flex justify-content-between">
+                                        <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
+                                        <div class="rate" style="width: 35%; text-align: left;">Deal</div>
                                     </div>
 
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="1.50" />
-                                            <span class="suffix">%</span>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="bkashWP2P" class="form-check-input">
+                                            <label for="bkashWP2P" class="form-check-label">bkash_W P2P</label>
+                                        </div>
+
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                <span class="suffix">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="nagodWP2P" class="form-check-input">
+                                            <label for="nagodWP2P" class="form-check-label">Nagod_W P2P</label>
+                                        </div>
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                <span class="suffix">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="conversion_label">
+                                            <input type="checkbox" id="rocketWP2P" class="form-check-input">
+                                            <label for="rocketWP2P" class="form-check-label">Rocket_W P2P</label>
+                                        </div>
+
+                                        <div class="currency_conversion_input_percentage">
+                                            <div class="input-container">
+                                                <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                <span class="suffix">%</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="nagodWP2P" class="form-check-input">
-                                        <label for="nagodWP2P" class="form-check-label">Nagod_W P2P</label>
-                                    </div>
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="3.00" />
-                                            <span class="suffix">%</span>
-                                        </div>
-                                    </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary w-100">Update</button>
                                 </div>
-                                <div class="mb-3 d-flex justify-content-between align-items-center">
-                                    <div class="conversion_label">
-                                        <input type="checkbox" id="rocketWP2P" class="form-check-input">
-                                        <label for="rocketWP2P" class="form-check-label">Rocket_W P2P</label>
-                                    </div>
-
-                                    <div class="currency_conversion_input_percentage">
-                                        <div class="input-container">
-                                            <input type="number" class="form-control" step="0.01" value="1.50" />
-                                            <span class="suffix">%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <button class="btn btn-primary w-100">Update</button>
                             </div>
                         </div>
                     </div>
