@@ -1,17 +1,17 @@
-.api_key_section .form-control {
-    border-color: #000000;
-    color: #000000;
-}
+/*.api_key_section .form-control {*/
+/*    border-color: #000000;*/
+/*    color: #000000;*/
+/*}*/
 
 
-.api_key_section .btn-outline-secondary {
-    color: #000000;
-    border-color: #000000;
-}
+/*.api_key_section .btn-outline-secondary {*/
+/*    color: #000000;*/
+/*    border-color: #000000;*/
+/*}*/
 
 
 .currency_conversion .card {
-    border: 1px solid #000000;
+    border: 1px solid #dddddd;
 }
 
 .currency_conversion .conversion_label {
