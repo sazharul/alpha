@@ -1,3 +1,21 @@
+.api_key_section .btn-link {
+    border-color: #DBDBDB;
+}
+
+.currency_conversion .btn-primary,
+.ip_witelisting .btn-primary,
+.api_key_section .btn-primary {
+    background: #38477E1A;
+    color: #38477E;
+    border: none;
+}
+
+.currency_conversion .card-header {
+    background: #F2F2F2;
+    color: #000000;
+    font-weight: 500;
+}
+
 .currency_conversion .card {
     border: 1px solid #dddddd;
     height: 485px;
@@ -9,7 +27,7 @@
     border: 1px solid #ced4da;
     padding: 10px;
     margin: 0px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .currency_conversion .conversion_input {
@@ -17,10 +35,11 @@
     width: 35%;
     padding: 10px;
     border-color: #ced4da;
-    border-radius: 2px;
 }
 
-
+.select2-selection__choice__remove {
+    border-color: #FFFFFF !important;
+}
 
 
 /* General reset for consistent behavior across browsers */
