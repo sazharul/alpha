@@ -7,32 +7,24 @@
 
 /* General button style */
 .custom-button, .custom-dropdown-button {
-    --vz-badge-padding-x: 0.65em;
-    --vz-badge-padding-y: 0.35em;
-    --vz-badge-font-size: 0.75em;
-    --vz-badge-font-weight: var(--vz-font-weight-semibold);
-    --vz-badge-color: #fff;
-    --vz-badge-border-radius: 0.25rem;
-    display: inline-block;
-    padding: var(--vz-badge-padding-y) var(--vz-badge-padding-x);
-    font-size: var(--vz-badge-font-size);
-    line-height: 1;
+    background-color: #e6e6e7; /* Light gray background */
+    border: none; /* No border */
+    border-radius: 25px;
+    padding: 7px 12px 5px;
+    font-size: 9px;
     color: #000;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: var(--vz-badge-border-radius);
-    background-color: #e6e6e7;
-
-    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px; /* Fully rounded edges */
 }
 
 .custom-dropdown-button {
     width: 30px;
-    height: 17px;
-    border-radius: var(--vz-badge-border-radius);
+    height: 24px;
+    border-radius: 100%;
     display: inline-block;
-    padding: 5px 5px 3px 0px;
+    padding: 8px 5px 3px 0px;
 }
 
 /* Hover effect for all buttons */
@@ -49,13 +41,8 @@
 
 /* Dropdown arrow styling */
 .custom-dropdown-button::after {
-    content: ""; /* No text content */
-    display: inline-block;
-    width: 12px; /* Set the width of the arrow */
-    height: 12px; /* Set the height of the arrow */
-    background-image: url('/assets/bottom_arrow.svg'); /* SVG image URL */
-    background-size: contain; /* Ensure the SVG scales properly */
-    background-repeat: no-repeat;
+    content: "▼"; /* Downward arrow */
+    font-size: 14px;
     margin-left: 5px;
 }
 
