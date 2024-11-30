@@ -34,6 +34,7 @@ export default defineConfig({
                 prepayment: path.resolve(__dirname, 'src', 'prepayment.html'), // Specify the main entry point
                 merchant_management: path.resolve(__dirname, 'src', 'merchant-management.html'), // Specify the main entry point
                 merchant_settings: path.resolve(__dirname, 'src', 'merchant-settings.html'), // Specify the main entry point
+                bank_deposit_p2c: path.resolve(__dirname, 'src', 'bank-deposit-p2c.html'), // Specify the main entry point
             },
         },
     },
