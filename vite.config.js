@@ -37,6 +37,7 @@ export default defineConfig({
                 bank_deposit_p2c: path.resolve(__dirname, 'src', 'bank-deposit-p2c.html'), // Specify the main entry point
                 settlement_management: path.resolve(__dirname, 'src', 'settlement-management.html'), // Specify the main entry point
                 signin: path.resolve(__dirname, 'src', 'signin.html'), // Specify the main entry point
+                signup: path.resolve(__dirname, 'src', 'signup.html'), // Specify the main entry point
                 forgot_password: path.resolve(__dirname, 'src', 'forgot-password.html'), // Specify the main entry point
             },
         },
