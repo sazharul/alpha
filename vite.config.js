@@ -41,6 +41,7 @@ export default defineConfig({
                 forgot_password: path.resolve(__dirname, 'src', 'forgot-password.html'), // Specify the main entry point
                 otp: path.resolve(__dirname, 'src', 'otp.html'), // Specify the main entry point
                 forget_otp: path.resolve(__dirname, 'src', 'forget-otp.html'), // Specify the main entry point
+                logout: path.resolve(__dirname, 'src', 'logout.html'), // Specify the main entry point
             },
         },
     },
