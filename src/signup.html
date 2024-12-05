@@ -1,27 +1,28 @@
 <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default"
-      data-theme-colors="default">
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
 
+
+<!-- Mirrored from themesbrand.com/velzon/html/master/auth-signup-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:57:22 GMT -->
 <head>
 
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Sign Up | Velzon - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description"/>
-    <meta content="Themesbrand" name="author"/>
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <!-- Layout config Js -->
-    <script src="/assets/js/layout.js"></script>
+    <script src="assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
-    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -47,7 +48,7 @@
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
                                 <a href="index.html" class="d-inline-block auth-logo">
-                                    <img src="/assets/images/logo-light.png" alt="" height="20">
+                                    <img src="assets/images/logo-light.png" alt="" height="20">
                                 </a>
                             </div>
                             <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
@@ -57,7 +58,7 @@
                 <!-- end row -->
 
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-8 col-xl-8">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
                         <div class="card mt-4 card-bg-fill">
 
                             <div class="card-body p-4">
@@ -66,277 +67,68 @@
                                     <p class="text-muted">Get your free velzon account now</p>
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form action="dashboard.html" class="form-steps" autocomplete="off" id="multi-step-form">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="gen-info-email-input">Email</label>
-                                                    <input type="email" class="form-control" id="gen-info-email-input" placeholder="Enter email" required>
-                                                    <div class="invalid-feedback">Please enter an email address</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="gen-info-username-input">User Name</label>
-                                                    <input type="text" class="form-control" id="gen-info-username-input" placeholder="Enter user name" required>
-                                                    <div class="invalid-feedback">Please enter a user name</div>
-                                                </div>
+                                    <form class="needs-validation" novalidate action="otp.html">
+
+                                        <div class="mb-3">
+                                            <label for="useremail" class="form-label">Email <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" id="useremail" placeholder="Enter email address" required>
+                                            <div class="invalid-feedback">
+                                                Please enter email
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="gen-info-password-input">Password</label>
-                                                    <input type="password" class="form-control" id="gen-info-password-input" placeholder="Enter Password" required>
-                                                    <div class="invalid-feedback">Please enter a password</div>
-                                                </div>
+                                        <div class="mb-3">
+                                            <label for="username" class="form-label">Username <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                                            <div class="invalid-feedback">
+                                                Please enter username
                                             </div>
                                         </div>
 
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="full-name-input">Full Name</label>
-                                                    <input type="text" class="form-control" id="full-name-input" placeholder="Enter full name" required>
-                                                    <div class="invalid-feedback">Please enter your full name</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="country-input">Country</label>
-                                                    <select class="form-select" id="country-input" required>
-                                                        <option value="" disabled selected>Select Country</option>
-                                                        <option value="AF">Afghanistan</option>
-                                                        <option value="AL">Albania</option>
-                                                        <option value="DZ">Algeria</option>
-                                                        <option value="AS">American Samoa</option>
-                                                        <option value="AD">Andorra</option>
-                                                        <option value="AO">Angola</option>
-                                                        <option value="AI">Anguilla</option>
-                                                        <option value="AQ">Antarctica</option>
-                                                        <option value="AG">Antigua and Barbuda</option>
-                                                        <option value="AR">Argentina</option>
-                                                        <option value="AM">Armenia</option>
-                                                        <option value="AW">Aruba</option>
-                                                        <option value="AU">Australia</option>
-                                                        <option value="AT">Austria</option>
-                                                        <option value="AZ">Azerbaijan</option>
-                                                        <option value="BS">Bahamas</option>
-                                                        <option value="BH">Bahrain</option>
-                                                        <option value="BD">Bangladesh</option>
-                                                        <option value="BB">Barbados</option>
-                                                        <option value="BY">Belarus</option>
-                                                        <option value="BE">Belgium</option>
-                                                        <option value="BZ">Belize</option>
-                                                        <option value="BJ">Benin</option>
-                                                        <option value="BM">Bermuda</option>
-                                                        <option value="BT">Bhutan</option>
-                                                        <option value="BO">Bolivia</option>
-                                                        <option value="BA">Bosnia and Herzegovina</option>
-                                                        <option value="BW">Botswana</option>
-                                                        <option value="BV">Bouvet Island</option>
-                                                        <option value="BR">Brazil</option>
-                                                        <option value="IO">British Indian Ocean Territory</option>
-                                                        <option value="BN">Brunei Darussalam</option>
-                                                        <option value="BG">Bulgaria</option>
-                                                        <option value="BF">Burkina Faso</option>
-                                                        <option value="BI">Burundi</option>
-                                                        <option value="KH">Cambodia</option>
-                                                        <option value="CM">Cameroon</option>
-                                                        <option value="CA">Canada</option>
-                                                        <option value="CV">Cape Verde</option>
-                                                        <option value="KY">Cayman Islands</option>
-                                                        <option value="CF">Central African Republic</option>
-                                                        <option value="TD">Chad</option>
-                                                        <option value="CL">Chile</option>
-                                                        <option value="CN">China</option>
-                                                        <option value="CX">Christmas Island</option>
-                                                        <option value="CC">Cocos (Keeling) Islands</option>
-                                                        <option value="CO">Colombia</option>
-                                                        <option value="KM">Comoros</option>
-                                                        <option value="CG">Congo</option>
-                                                        <option value="CD">Congo, Democratic Republic of the</option>
-                                                        <option value="CK">Cook Islands</option>
-                                                        <option value="CR">Costa Rica</option>
-                                                        <option value="CI">Côte d'Ivoire</option>
-                                                        <option value="HR">Croatia</option>
-                                                        <option value="CU">Cuba</option>
-                                                        <option value="CW">Curaçao</option>
-                                                        <option value="CY">Cyprus</option>
-                                                        <option value="CZ">Czech Republic</option>
-                                                        <option value="DK">Denmark</option>
-                                                        <option value="DJ">Djibouti</option>
-                                                        <option value="DM">Dominica</option>
-                                                        <option value="DO">Dominican Republic</option>
-                                                        <option value="EC">Ecuador</option>
-                                                        <option value="EG">Egypt</option>
-                                                        <option value="SV">El Salvador</option>
-                                                        <option value="GQ">Equatorial Guinea</option>
-                                                        <option value="ER">Eritrea</option>
-                                                        <option value="EE">Estonia</option>
-                                                        <option value="ET">Ethiopia</option>
-                                                        <option value="FK">Falkland Islands</option>
-                                                        <option value="FO">Faroe Islands</option>
-                                                        <option value="FJ">Fiji</option>
-                                                        <option value="FI">Finland</option>
-                                                        <option value="FR">France</option>
-                                                        <option value="GF">French Guiana</option>
-                                                        <option value="PF">French Polynesia</option>
-                                                        <option value="TF">French Southern Territories</option>
-                                                        <option value="GA">Gabon</option>
-                                                        <option value="GM">Gambia</option>
-                                                        <option value="GE">Georgia</option>
-                                                        <option value="DE">Germany</option>
-                                                        <option value="GH">Ghana</option>
-                                                        <option value="GI">Gibraltar</option>
-                                                        <option value="GR">Greece</option>
-                                                        <option value="GL">Greenland</option>
-                                                        <option value="GD">Grenada</option>
-                                                        <option value="GP">Guadeloupe</option>
-                                                        <option value="GU">Guam</option>
-                                                        <option value="GT">Guatemala</option>
-                                                        <option value="GG">Guernsey</option>
-                                                        <option value="GN">Guinea</option>
-                                                        <option value="GW">Guinea-Bissau</option>
-                                                        <option value="GY">Guyana</option>
-                                                        <option value="HT">Haiti</option>
-                                                        <option value="HM">Heard Island and McDonald Islands</option>
-                                                        <option value="HN">Honduras</option>
-                                                        <option value="HK">Hong Kong</option>
-                                                        <option value="HU">Hungary</option>
-                                                        <option value="IS">Iceland</option>
-                                                        <option value="IN">India</option>
-                                                        <option value="ID">Indonesia</option>
-                                                        <option value="IR">Iran</option>
-                                                        <option value="IQ">Iraq</option>
-                                                        <option value="IE">Ireland</option>
-                                                        <option value="IL">Israel</option>
-                                                        <option value="IT">Italy</option>
-                                                        <option value="JM">Jamaica</option>
-                                                        <option value="JP">Japan</option>
-                                                        <option value="JE">Jersey</option>
-                                                        <option value="JO">Jordan</option>
-                                                        <option value="KZ">Kazakhstan</option>
-                                                        <option value="KE">Kenya</option>
-                                                        <option value="KI">Kiribati</option>
-                                                        <option value="KW">Kuwait</option>
-                                                        <option value="KG">Kyrgyzstan</option>
-                                                        <option value="LA">Lao People's Democratic Republic</option>
-                                                        <option value="LV">Latvia</option>
-                                                        <option value="LB">Lebanon</option>
-                                                        <option value="LS">Lesotho</option>
-                                                        <option value="LR">Liberia</option>
-                                                        <option value="LY">Libya</option>
-                                                        <option value="LI">Liechtenstein</option>
-                                                        <option value="LT">Lithuania</option>
-                                                        <option value="LU">Luxembourg</option>
-                                                        <option value="MO">Macao</option>
-                                                        <option value="MK">Macedonia</option>
-                                                        <option value="MG">Madagascar</option>
-                                                        <option value="MW">Malawi</option>
-                                                        <option value="MY">Malaysia</option>
-                                                        <option value="MV">Maldives</option>
-                                                        <option value="ML">Mali</option>
-                                                        <option value="MT">Malta</option>
-                                                        <option value="MH">Marshall Islands</option>
-                                                        <option value="MQ">Martinique</option>
-                                                        <option value="MR">Mauritania</option>
-                                                        <option value="MU">Mauritius</option>
-                                                        <option value="YT">Mayotte</option>
-                                                        <option value="MX">Mexico</option>
-                                                        <option value="FM">Micronesia</option>
-                                                        <option value="MD">Moldova</option>
-                                                        <option value="MC">Monaco</option>
-                                                        <option value="MN">Mongolia</option>
-                                                        <option value="ME">Montenegro</option>
-                                                        <option value="MS">Montserrat</option>
-                                                        <option value="MA">Morocco</option>
-                                                        <option value="MZ">Mozambique</option>
-                                                        <option value="MM">Myanmar</option>
-                                                        <option value="NA">Namibia</option>
-                                                        <option value="NR">Nauru</option>
-                                                        <option value="NP">Nepal</option>
-                                                        <option value="NL">Netherlands</option>
-                                                        <option value="NC">New Caledonia</option>
-                                                        <option value="NZ">New Zealand</option>
-                                                        <option value="NI">Nicaragua</option>
-                                                        <option value="NE">Niger</option>
-                                                        <option value="NG">Nigeria</option>
-                                                        <option value="NU">Niue</option>
-                                                        <option value="NF">Norfolk Island</option>
-                                                        <option value="NO">Norway</option>
-                                                    </select>
-                                                    <div class="invalid-feedback">Please enter your country</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="phone-input">Phone Number</label>
-                                                    <input type="tel" class="form-control" id="phone-input" placeholder="Enter phone number" required>
-                                                    <div class="invalid-feedback">Please enter a phone number</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="telegram-input">Telegram</label>
-                                                    <input type="text" class="form-control" id="telegram-input" placeholder="Enter Telegram handle" required>
-                                                    <div class="invalid-feedback">Please enter a valid Telegram handle</div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="document-type-select">Document Type</label>
-                                                    <select class="form-select" id="document-type-select" required>
-                                                        <option value="" disabled selected>Select ID/Passport</option>
-                                                        <option value="id">ID</option>
-                                                        <option value="passport">Passport</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="front-side-upload">Front Side</label>
-                                                    <input type="file" class="form-control" id="front-side-upload" required>
-                                                    <div class="invalid-feedback">Please upload the front side of your document</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="back-side-upload">Back Side</label>
-                                                    <input type="file" class="form-control" id="back-side-upload" required>
-                                                    <div class="invalid-feedback">Please upload the back side of your document</div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="password-input">Password</label>
+                                            <div class="position-relative auth-pass-inputgroup">
+                                                <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon material-shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                <div class="invalid-feedback">
+                                                    Please enter password
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="selfie-upload">Selfie with ID/Password</label>
-                                            <input type="file" class="form-control" id="selfie-upload" required>
-                                            <div class="invalid-feedback">Please upload a selfie with your document</div>
+                                            <label class="form-label" for="referral">Referral (Optional)</label>
+                                            <input type="text" class="form-control" id="referral" placeholder="Enter Referral">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <p class="mb-0 fs-12 text-muted fst-italic">By registering you agree to the Velzon <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Terms of Use</a></p>
+                                        </div>
+
+                                        <div id="password-contain" class="p-3 bg-light mb-2 rounded">
+                                            <h5 class="fs-13">Password must contain:</h5>
+                                            <p id="pass-length" class="invalid fs-12 mb-2">Minimum <b>8 characters</b></p>
+                                            <p id="pass-lower" class="invalid fs-12 mb-2">At <b>lowercase</b> letter (a-z)</p>
+                                            <p id="pass-upper" class="invalid fs-12 mb-2">At least <b>uppercase</b> letter (A-Z)</p>
+                                            <p id="pass-number" class="invalid fs-12 mb-0">A least <b>number</b> (0-9)</p>
                                         </div>
 
                                         <div class="mt-4">
                                             <button class="btn btn-success w-100" type="submit">Sign Up</button>
                                         </div>
 
-                                    </form>
+                                        <div class="mt-4 text-center">
+                                            <div class="signin-other-title">
+                                                <h5 class="fs-13 mb-4 title text-muted">Create account with</h5>
+                                            </div>
 
-                                    <div class="mt-4 text-center">
-                                        <div class="signin-other-title">
-                                            <h5 class="fs-13 mb-4 title">Sign Up with</h5>
+                                            <div>
+                                                <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
+                                                <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
-                                            <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
-                                        </div>
-                                    </div>
+                                    </form>
 
                                 </div>
                             </div>
@@ -345,7 +137,7 @@
                         <!-- end card -->
 
                         <div class="mt-4 text-center">
-                            <p class="mb-0">Already have an account ? <a href="signin.html" class="fw-semibold text-primary text-decoration-underline"> Signin </a></p>
+                            <p class="mb-0">Already have an account ? <a href="signin.html" class="fw-semibold text-primary text-decoration-underline"> Signin </a> </p>
                         </div>
 
                     </div>
@@ -363,8 +155,7 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script>
-                                Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
                             </p>
                         </div>
                     </div>
@@ -376,101 +167,23 @@
     <!-- end auth-page-wrapper -->
 
     <!-- JAVASCRIPT -->
-    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="/assets/libs/node-waves/waves.min.js"></script>
-    <script src="/assets/libs/feather-icons/feather.min.js"></script>
-    <script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
-    <script src="/assets/js/plugins.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
 
     <!-- particles js -->
-    <script src="/assets/libs/particles.js/particles.js"></script>
+    <script src="assets/libs/particles.js/particles.js"></script>
     <!-- particles app js -->
-    <script src="/assets/js/pages/particles.app.js"></script>
+    <script src="assets/js/pages/particles.app.js"></script>
     <!-- validation init -->
-    <script src="/assets/js/pages/form-validation.init.js"></script>
+    <script src="assets/js/pages/form-validation.init.js"></script>
     <!-- password create init -->
-    <script src="/assets/js/pages/passowrd-create.init.js"></script>
-
-    <script>
-        function nextTab(tabId) {
-            // Show the next tab
-            var currentTab = document.querySelector('.tab-pane.show');
-            var nextTab = document.getElementById(tabId);
-            currentTab.classList.remove('show', 'active');
-            nextTab.classList.add('show', 'active');
-
-            // Mark the current tab and all previous tabs as active
-            var tabs = document.querySelectorAll('.nav-link');
-            var currentTabIndex = Array.from(tabs).findIndex(tab => tab.id === tabId + '-tab');
-
-            // Activate all tabs up to the current tab
-            for (var i = 0; i <= currentTabIndex; i++) {
-                tabs[i].classList.add('active');
-            }
-
-            // Update progress bar
-            updateProgressBar();
-        }
-
-        function prevTab(tabId) {
-            // Show the previous tab
-            var currentTab = document.querySelector('.tab-pane.show');
-            var prevTab = document.getElementById(tabId);
-            currentTab.classList.remove('show', 'active');
-            prevTab.classList.add('show', 'active');
-
-            // Mark the previous tab and all the tabs before it as active
-            var tabs = document.querySelectorAll('.nav-link');
-            var prevTabIndex = Array.from(tabs).findIndex(tab => tab.id === tabId + '-tab');
-
-            // Activate all tabs up to the previous tab
-            for (var i = 0; i <= prevTabIndex; i++) {
-                tabs[i].classList.add('active');
-            }
-
-            // Update progress bar
-            updateProgressBar();
-        }
-
-        function updateProgressBar() {
-            // Get all the tab panes
-            var allTabs = document.querySelectorAll('.tab-pane');
-
-            // Find the active tab by looking for the `.show` class (indicating the active tab in Bootstrap)
-            var activeTab = Array.from(allTabs).findIndex(tab => tab.classList.contains('show'));
-
-            // Progress percentages:
-            // 0% for the first tab, 50% for the second, 100% for the third
-            var progressPercentage = 0;
-
-
-            if (activeTab === 1) {
-                progressPercentage = 50; // 50% for second tab
-                document.querySelector('.nav-pills li:nth-child(1) button').classList.add('active');
-                // thrird tab will be remove class active
-                document.querySelector('.nav-pills li:nth-child(3) button').classList.remove('active');
-            } else if (activeTab === 2) {
-                progressPercentage = 100; // 100% for third tab
-                // all tabs will be add class active
-                document.querySelector('.nav-pills li:nth-child(1) button').classList.add('active');
-            } else {
-                // only first tab will be add class active
-                document.querySelector('.nav-pills li:nth-child(1) button').classList.add('active');
-                // remove other tabs class active
-                document.querySelector('.nav-pills li:nth-child(2) button').classList.remove('active');
-                document.querySelector('.nav-pills li:nth-child(3) button').classList.remove('active');
-            }
-
-            // Update the progress bar width
-            document.querySelector('.progress-bar').style.width = progressPercentage + '%';
-
-            // Optional: Update the aria values for accessibility
-            document.querySelector('.progress-bar').setAttribute('aria-valuenow', progressPercentage);
-            document.querySelector('.progress-bar').setAttribute('aria-valuemax', 100);
-        }
-
-
-    </script>
+    <script src="assets/js/pages/passowrd-create.init.js"></script>
 </body>
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/master/auth-signup-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:57:22 GMT -->
 </html>
