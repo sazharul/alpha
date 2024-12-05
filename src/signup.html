@@ -66,174 +66,272 @@
                                     <p class="text-muted">Get your free velzon account now</p>
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form action="#" class="form-steps" autocomplete="off" id="multi-step-form">
-                                        <!-- Progress Bar -->
-                                        <div id="custom-progress-bar" class="progress-nav mb-4">
-                                            <div class="progress" style="height: 1px;">
-                                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <ul class="nav nav-pills progress-bar-tab custom-nav" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link rounded-pill active" data-progressbar="custom-progress-bar" id="pills-gen-info-tab"
-                                                            data-bs-toggle="pill" data-bs-target="#pills-gen-info" type="button" role="tab" aria-controls="pills-gen-info"
-                                                            aria-selected="true">1
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link rounded-pill" data-progressbar="custom-progress-bar" id="pills-otp-verification-tab"
-                                                            data-bs-toggle="pill" data-bs-target="#pills-otp-verification" type="button" role="tab"
-                                                            aria-controls="pills-otp-verification" aria-selected="false">2
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link rounded-pill" data-progressbar="custom-progress-bar" id="pills-personal-info-tab" data-bs-toggle="pill"
-                                                            data-bs-target="#pills-personal-info" type="button" role="tab" aria-controls="pills-personal-info"
-                                                            aria-selected="false">3
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <form action="dashboard.html" class="form-steps" autocomplete="off" id="multi-step-form">
 
-                                        <div class="tab-content">
-                                            <!-- Step 1: General Information -->
-                                            <div class="tab-pane fade show active" id="pills-gen-info" role="tabpanel" aria-labelledby="pills-gen-info-tab">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="gen-info-email-input">Email</label>
-                                                            <input type="email" class="form-control" id="gen-info-email-input" placeholder="Enter email" required>
-                                                            <div class="invalid-feedback">Please enter an email address</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="gen-info-username-input">User Name</label>
-                                                            <input type="text" class="form-control" id="gen-info-username-input" placeholder="Enter user name" required>
-                                                            <div class="invalid-feedback">Please enter a user name</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="gen-info-password-input">Password</label>
-                                                            <input type="password" class="form-control" id="gen-info-password-input" placeholder="Enter Password" required>
-                                                            <div class="invalid-feedback">Please enter a password</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="referral">Referral (Optional)</label>
-                                                            <input type="text" class="form-control" id="referral" placeholder="Enter Referral">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex align-items-start gap-3 mt-4">
-                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab" data-nexttab="pills-otp-verification-tab"
-                                                            onclick="nextTab('pills-otp-verification')">
-                                                        <i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Save & Next
-                                                    </button>
-                                                </div>
-                                            </div>
 
-                                            <!-- Step 2: OTP Verification -->
-                                            <div class="tab-pane fade" id="pills-otp-verification" role="tabpanel" aria-labelledby="pills-otp-verification-tab">
+                                        <div class="row">
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="otp-input">Enter OTP</label>
-                                                    <input type="text" class="form-control" id="otp-input" placeholder="Enter OTP" required>
-                                                    <div class="invalid-feedback">Please enter a valid OTP</div>
-                                                </div>
-                                                <div class="d-flex align-items-start gap-3 mt-4">
-                                                    <button type="button" class="btn btn-link text-decoration-none btn-label previestab" data-previous="pills-gen-info-tab"
-                                                            onclick="prevTab('pills-gen-info')">
-                                                        <i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to General
-                                                    </button>
-                                                    <button type="button" class="btn btn-success btn-label right ms-auto nexttab" data-nexttab="pills-personal-info-tab"
-                                                            onclick="nextTab('pills-personal-info')">
-                                                        <i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Save & Next
-                                                    </button>
+                                                    <label class="form-label" for="gen-info-email-input">Email</label>
+                                                    <input type="email" class="form-control" id="gen-info-email-input" placeholder="Enter email" required>
+                                                    <div class="invalid-feedback">Please enter an email address</div>
                                                 </div>
                                             </div>
-
-                                            <!-- Step 3: Personal Information & Document Upload -->
-                                            <div class="tab-pane fade" id="pills-personal-info" role="tabpanel" aria-labelledby="pills-personal-info-tab">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="full-name-input">Full Name</label>
-                                                            <input type="text" class="form-control" id="full-name-input" placeholder="Enter full name" required>
-                                                            <div class="invalid-feedback">Please enter your full name</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="country-input">Country</label>
-                                                            <input type="text" class="form-control" id="country-input" placeholder="Enter country" required>
-                                                            <div class="invalid-feedback">Please enter your country</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="phone-input">Phone Number</label>
-                                                            <input type="tel" class="form-control" id="phone-input" placeholder="Enter phone number" required>
-                                                            <div class="invalid-feedback">Please enter a phone number</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="telegram-input">Telegram</label>
-                                                            <input type="text" class="form-control" id="telegram-input" placeholder="Enter Telegram handle" required>
-                                                            <div class="invalid-feedback">Please enter a valid Telegram handle</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="document-type-select">Document Type</label>
-                                                            <select class="form-select" id="document-type-select" required>
-                                                                <option value="" disabled selected>Select ID/Passport</option>
-                                                                <option value="id">ID</option>
-                                                                <option value="passport">Passport</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="front-side-upload">Front Side</label>
-                                                            <input type="file" class="form-control" id="front-side-upload" accept="image/*" required>
-                                                            <div class="invalid-feedback">Please upload the front side of your document</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="back-side-upload">Back Side</label>
-                                                            <input type="file" class="form-control" id="back-side-upload" accept="image/*" required>
-                                                            <div class="invalid-feedback">Please upload the back side of your document</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
+                                            <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="selfie-upload">Selfie with ID/Password</label>
-                                                    <input type="file" class="form-control" id="selfie-upload" accept="image/*" required>
-                                                    <div class="invalid-feedback">Please upload a selfie with your document</div>
-                                                </div>
-
-                                                <div class="d-flex align-items-start gap-3 mt-4">
-                                                    <button type="button" class="btn btn-link text-decoration-none btn-label previestab" data-previous="pills-otp-verification-tab"
-                                                            onclick="prevTab('pills-otp-verification')">
-                                                        <i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to OTP Verification
-                                                    </button>
-                                                    <button type="submit" class="btn btn-success btn-label right ms-auto">
-                                                        <i class="ri-check-line label-icon align-middle fs-16 ms-2"></i> Submit
-                                                    </button>
+                                                    <label class="form-label" for="gen-info-username-input">User Name</label>
+                                                    <input type="text" class="form-control" id="gen-info-username-input" placeholder="Enter user name" required>
+                                                    <div class="invalid-feedback">Please enter a user name</div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="gen-info-password-input">Password</label>
+                                                    <input type="password" class="form-control" id="gen-info-password-input" placeholder="Enter Password" required>
+                                                    <div class="invalid-feedback">Please enter a password</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="referral">Referral (Optional)</label>
+                                                    <input type="text" class="form-control" id="referral" placeholder="Enter Referral">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="full-name-input">Full Name</label>
+                                                    <input type="text" class="form-control" id="full-name-input" placeholder="Enter full name" required>
+                                                    <div class="invalid-feedback">Please enter your full name</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="country-input">Country</label>
+                                                    <select class="form-select" id="country-input" required>
+                                                        <option value="" disabled selected>Select Country</option>
+                                                        <option value="AF">Afghanistan</option>
+                                                        <option value="AL">Albania</option>
+                                                        <option value="DZ">Algeria</option>
+                                                        <option value="AS">American Samoa</option>
+                                                        <option value="AD">Andorra</option>
+                                                        <option value="AO">Angola</option>
+                                                        <option value="AI">Anguilla</option>
+                                                        <option value="AQ">Antarctica</option>
+                                                        <option value="AG">Antigua and Barbuda</option>
+                                                        <option value="AR">Argentina</option>
+                                                        <option value="AM">Armenia</option>
+                                                        <option value="AW">Aruba</option>
+                                                        <option value="AU">Australia</option>
+                                                        <option value="AT">Austria</option>
+                                                        <option value="AZ">Azerbaijan</option>
+                                                        <option value="BS">Bahamas</option>
+                                                        <option value="BH">Bahrain</option>
+                                                        <option value="BD">Bangladesh</option>
+                                                        <option value="BB">Barbados</option>
+                                                        <option value="BY">Belarus</option>
+                                                        <option value="BE">Belgium</option>
+                                                        <option value="BZ">Belize</option>
+                                                        <option value="BJ">Benin</option>
+                                                        <option value="BM">Bermuda</option>
+                                                        <option value="BT">Bhutan</option>
+                                                        <option value="BO">Bolivia</option>
+                                                        <option value="BA">Bosnia and Herzegovina</option>
+                                                        <option value="BW">Botswana</option>
+                                                        <option value="BV">Bouvet Island</option>
+                                                        <option value="BR">Brazil</option>
+                                                        <option value="IO">British Indian Ocean Territory</option>
+                                                        <option value="BN">Brunei Darussalam</option>
+                                                        <option value="BG">Bulgaria</option>
+                                                        <option value="BF">Burkina Faso</option>
+                                                        <option value="BI">Burundi</option>
+                                                        <option value="KH">Cambodia</option>
+                                                        <option value="CM">Cameroon</option>
+                                                        <option value="CA">Canada</option>
+                                                        <option value="CV">Cape Verde</option>
+                                                        <option value="KY">Cayman Islands</option>
+                                                        <option value="CF">Central African Republic</option>
+                                                        <option value="TD">Chad</option>
+                                                        <option value="CL">Chile</option>
+                                                        <option value="CN">China</option>
+                                                        <option value="CX">Christmas Island</option>
+                                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                                        <option value="CO">Colombia</option>
+                                                        <option value="KM">Comoros</option>
+                                                        <option value="CG">Congo</option>
+                                                        <option value="CD">Congo, Democratic Republic of the</option>
+                                                        <option value="CK">Cook Islands</option>
+                                                        <option value="CR">Costa Rica</option>
+                                                        <option value="CI">Côte d'Ivoire</option>
+                                                        <option value="HR">Croatia</option>
+                                                        <option value="CU">Cuba</option>
+                                                        <option value="CW">Curaçao</option>
+                                                        <option value="CY">Cyprus</option>
+                                                        <option value="CZ">Czech Republic</option>
+                                                        <option value="DK">Denmark</option>
+                                                        <option value="DJ">Djibouti</option>
+                                                        <option value="DM">Dominica</option>
+                                                        <option value="DO">Dominican Republic</option>
+                                                        <option value="EC">Ecuador</option>
+                                                        <option value="EG">Egypt</option>
+                                                        <option value="SV">El Salvador</option>
+                                                        <option value="GQ">Equatorial Guinea</option>
+                                                        <option value="ER">Eritrea</option>
+                                                        <option value="EE">Estonia</option>
+                                                        <option value="ET">Ethiopia</option>
+                                                        <option value="FK">Falkland Islands</option>
+                                                        <option value="FO">Faroe Islands</option>
+                                                        <option value="FJ">Fiji</option>
+                                                        <option value="FI">Finland</option>
+                                                        <option value="FR">France</option>
+                                                        <option value="GF">French Guiana</option>
+                                                        <option value="PF">French Polynesia</option>
+                                                        <option value="TF">French Southern Territories</option>
+                                                        <option value="GA">Gabon</option>
+                                                        <option value="GM">Gambia</option>
+                                                        <option value="GE">Georgia</option>
+                                                        <option value="DE">Germany</option>
+                                                        <option value="GH">Ghana</option>
+                                                        <option value="GI">Gibraltar</option>
+                                                        <option value="GR">Greece</option>
+                                                        <option value="GL">Greenland</option>
+                                                        <option value="GD">Grenada</option>
+                                                        <option value="GP">Guadeloupe</option>
+                                                        <option value="GU">Guam</option>
+                                                        <option value="GT">Guatemala</option>
+                                                        <option value="GG">Guernsey</option>
+                                                        <option value="GN">Guinea</option>
+                                                        <option value="GW">Guinea-Bissau</option>
+                                                        <option value="GY">Guyana</option>
+                                                        <option value="HT">Haiti</option>
+                                                        <option value="HM">Heard Island and McDonald Islands</option>
+                                                        <option value="HN">Honduras</option>
+                                                        <option value="HK">Hong Kong</option>
+                                                        <option value="HU">Hungary</option>
+                                                        <option value="IS">Iceland</option>
+                                                        <option value="IN">India</option>
+                                                        <option value="ID">Indonesia</option>
+                                                        <option value="IR">Iran</option>
+                                                        <option value="IQ">Iraq</option>
+                                                        <option value="IE">Ireland</option>
+                                                        <option value="IL">Israel</option>
+                                                        <option value="IT">Italy</option>
+                                                        <option value="JM">Jamaica</option>
+                                                        <option value="JP">Japan</option>
+                                                        <option value="JE">Jersey</option>
+                                                        <option value="JO">Jordan</option>
+                                                        <option value="KZ">Kazakhstan</option>
+                                                        <option value="KE">Kenya</option>
+                                                        <option value="KI">Kiribati</option>
+                                                        <option value="KW">Kuwait</option>
+                                                        <option value="KG">Kyrgyzstan</option>
+                                                        <option value="LA">Lao People's Democratic Republic</option>
+                                                        <option value="LV">Latvia</option>
+                                                        <option value="LB">Lebanon</option>
+                                                        <option value="LS">Lesotho</option>
+                                                        <option value="LR">Liberia</option>
+                                                        <option value="LY">Libya</option>
+                                                        <option value="LI">Liechtenstein</option>
+                                                        <option value="LT">Lithuania</option>
+                                                        <option value="LU">Luxembourg</option>
+                                                        <option value="MO">Macao</option>
+                                                        <option value="MK">Macedonia</option>
+                                                        <option value="MG">Madagascar</option>
+                                                        <option value="MW">Malawi</option>
+                                                        <option value="MY">Malaysia</option>
+                                                        <option value="MV">Maldives</option>
+                                                        <option value="ML">Mali</option>
+                                                        <option value="MT">Malta</option>
+                                                        <option value="MH">Marshall Islands</option>
+                                                        <option value="MQ">Martinique</option>
+                                                        <option value="MR">Mauritania</option>
+                                                        <option value="MU">Mauritius</option>
+                                                        <option value="YT">Mayotte</option>
+                                                        <option value="MX">Mexico</option>
+                                                        <option value="FM">Micronesia</option>
+                                                        <option value="MD">Moldova</option>
+                                                        <option value="MC">Monaco</option>
+                                                        <option value="MN">Mongolia</option>
+                                                        <option value="ME">Montenegro</option>
+                                                        <option value="MS">Montserrat</option>
+                                                        <option value="MA">Morocco</option>
+                                                        <option value="MZ">Mozambique</option>
+                                                        <option value="MM">Myanmar</option>
+                                                        <option value="NA">Namibia</option>
+                                                        <option value="NR">Nauru</option>
+                                                        <option value="NP">Nepal</option>
+                                                        <option value="NL">Netherlands</option>
+                                                        <option value="NC">New Caledonia</option>
+                                                        <option value="NZ">New Zealand</option>
+                                                        <option value="NI">Nicaragua</option>
+                                                        <option value="NE">Niger</option>
+                                                        <option value="NG">Nigeria</option>
+                                                        <option value="NU">Niue</option>
+                                                        <option value="NF">Norfolk Island</option>
+                                                        <option value="NO">Norway</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">Please enter your country</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="phone-input">Phone Number</label>
+                                                    <input type="tel" class="form-control" id="phone-input" placeholder="Enter phone number" required>
+                                                    <div class="invalid-feedback">Please enter a phone number</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="telegram-input">Telegram</label>
+                                                    <input type="text" class="form-control" id="telegram-input" placeholder="Enter Telegram handle" required>
+                                                    <div class="invalid-feedback">Please enter a valid Telegram handle</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="document-type-select">Document Type</label>
+                                                    <select class="form-select" id="document-type-select" required>
+                                                        <option value="" disabled selected>Select ID/Passport</option>
+                                                        <option value="id">ID</option>
+                                                        <option value="passport">Passport</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="front-side-upload">Front Side</label>
+                                                    <input type="file" class="form-control" id="front-side-upload" required>
+                                                    <div class="invalid-feedback">Please upload the front side of your document</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="back-side-upload">Back Side</label>
+                                                    <input type="file" class="form-control" id="back-side-upload" required>
+                                                    <div class="invalid-feedback">Please upload the back side of your document</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="selfie-upload">Selfie with ID/Password</label>
+                                            <input type="file" class="form-control" id="selfie-upload" required>
+                                            <div class="invalid-feedback">Please upload a selfie with your document</div>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <button class="btn btn-success w-100" type="submit">Sign Up</button>
+                                        </div>
+
                                     </form>
 
                                     <div class="mt-4 text-center">

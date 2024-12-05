@@ -39,6 +39,7 @@ export default defineConfig({
                 signin: path.resolve(__dirname, 'src', 'signin.html'), // Specify the main entry point
                 signup: path.resolve(__dirname, 'src', 'signup.html'), // Specify the main entry point
                 forgot_password: path.resolve(__dirname, 'src', 'forgot-password.html'), // Specify the main entry point
+                otp: path.resolve(__dirname, 'src', 'otp.html'), // Specify the main entry point
             },
         },
     },
