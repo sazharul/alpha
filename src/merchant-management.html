@@ -40,6 +40,7 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/sohan.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -198,7 +199,7 @@
                                 <a class="dropdown-item" href="#"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle">Help</span></a>
                                 <a class="dropdown-item" href="logout.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle"
-                                                                                                                                          data-key="t-logout">Logout</span></a>
+                                                                                                                                                    data-key="t-logout">Logout</span></a>
                             </div>
                         </div>
                     </div>
@@ -624,6 +625,7 @@
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
                                                                 <th scope="col">Payment Method</th>
+                                                                <th scope="col">Wallet</th>
                                                                 <th scope="col">Status</th>
                                                                 <th scope="col">Action</th>
                                                             </tr>
@@ -642,11 +644,27 @@
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>bKash</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2">
+                                                                                <img class="add_money_popup" style="width: 18px;" src="/assets/money-add.svg" alt="add money">
+                                                                            </a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -670,11 +688,21 @@
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
                                                                 <td>Rocket</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -698,11 +726,21 @@
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
                                                                 <td>Nagad</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -726,11 +764,21 @@
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
                                                                 <td>bKash</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -754,11 +802,21 @@
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
                                                                 <td>Rocket</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -784,11 +842,21 @@
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>bKash</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -812,11 +880,21 @@
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
                                                                 <td>Rocket</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -840,11 +918,21 @@
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
                                                                 <td>Nagad</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -868,11 +956,21 @@
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
                                                                 <td>bKash</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -884,7 +982,7 @@
                                                                 </td>
                                                             </tr>
 
-                                                            
+
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
@@ -898,11 +996,21 @@
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
                                                                 <td>Rocket</td>
+                                                                <td>
+                                                                    <div class="price_button">
+                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
+                                                                        <button type="button" class="adjust_amount">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
+                                                                                                                      src="/assets/money-add.svg"
+                                                                                                                      alt="add money"></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
@@ -949,6 +1057,90 @@
         </div>
     </div>
 
+    <!-- Varying modal content -->
+    <div class="modal fade" id="varyingcontentModal" tabindex="-1" aria-labelledby="varyingcontentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="varyingcontentModalLabel">Add Wallet: BetConstruct Test</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="wallet_currency" class="col-form-label">Wallet currency <span style="color: red;">*</span></label>
+                            <select id="wallet_currency" class="form-control" name="wallet_currency">
+                                <option value="BDT">BDT</option>
+                                <option value="USD">USD</option>
+                                <option value="INR">INR</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="CAD">CAD</option>
+                                <option value="AUD">AUD</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary submit_button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- staticBackdrop Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:120px;height:120px"></lord-icon>
+
+                    <div class="mt-4">
+                        <h4 class="mb-3">You've made it!</h4>
+                        <p class="text-muted mb-4"> Wallet created successfully !</p>
+                        <div class="hstack gap-2 justify-content-center">
+                            <a href="javascript:void(0);" class="btn btn-success close_success_button">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Varying modal content -->
+    <div class="modal fade" id="updateCartWallet" tabindex="-1" aria-labelledby="updateCartWalletLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateCartWalletLabel">Update CAD Wallet: BetConstruct Test</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="update_cart_wallet" class="col-form-label">CAD Balance</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <select id="update_cart_wallet" class="form-control" name="update_cart_wallet">
+                                        <option value="Add Balance">Add Balance</option>
+                                        <option value="Deduct Balance">Deduct Balance</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="update_wallet_amount" placeholder="Adjustable amount">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary submit_button_update_wallet">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JAVASCRIPT -->
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1001,6 +1193,31 @@
             "info": false,
             "scrollX": true,
         });
+
+        $(document).ready(function () {
+            // When .add_money_popup is clicked, show the modal
+            $('.add_money_popup').on('click', function () {
+                $('#varyingcontentModal').modal('show');
+            });
+
+            $('.submit_button').on('click', function () {
+                $('#varyingcontentModal').modal('hide');
+                $('#staticBackdrop').modal('show');
+            });
+
+            $('.close_success_button').on('click', function () {
+                $('#staticBackdrop').modal('hide');
+            });
+
+            $('.adjust_amount').on('click', function () {
+                $('#updateCartWallet').modal('show');
+            });
+
+            $('.submit_button_update_wallet').on('click', function () {
+                $('#updateCartWallet').modal('hide');
+            });
+        });
+
     </script>
 
 </body>

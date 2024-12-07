@@ -1,0 +1,16 @@
+.price_button {
+    background-color: var(--vz-primary);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 0 2px 10px;
+    margin-top: 6px;
+}
+
+.price_button button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    margin-left: 2px;
+    border-left: 1px solid #ffffff;
+}
