@@ -42,6 +42,8 @@ export default defineConfig({
                 otp: path.resolve(__dirname, 'src', 'otp.html'), // Specify the main entry point
                 forget_otp: path.resolve(__dirname, 'src', 'forget-otp.html'), // Specify the main entry point
                 logout: path.resolve(__dirname, 'src', 'logout.html'), // Specify the main entry point
+                agent_management: path.resolve(__dirname, 'src', 'agent-management.html'), // Specify the main entry point
+                agent_settings: path.resolve(__dirname, 'src', 'agent-settings.html'), // Specify the main entry point
             },
         },
     },
