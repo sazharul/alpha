@@ -46,6 +46,7 @@ export default defineConfig({
                 agent_settings: path.resolve(__dirname, 'src', 'agent-settings.html'), // Specify the main entry point
                 staff_management: path.resolve(__dirname, 'src', 'staff-management.html'), // Specify the main entry point
                 change_password: path.resolve(__dirname, 'src', 'change-password.html'), // Specify the main entry point
+                roles: path.resolve(__dirname, 'src', 'roles.html'), // Specify the main entry point
             },
         },
     },

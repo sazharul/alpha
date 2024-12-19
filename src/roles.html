@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default"
+      data-theme-colors="default">
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/master/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:54:18 GMT -->
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description"/>
+    <meta content="Themesbrand" name="author"/>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- jsvectormap css -->
+    <link href="/assets/libs/jsvectormap/jsvectormap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--Swiper slider css-->
+    <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
+
+
+    <!--datatable css-->
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"/>
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+
+
+    <!-- Layout config Js -->
+    <script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Icons Css -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
+    <!-- App Css-->
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+    <!-- custom Css-->
+    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/roles.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/rtl/theme-default.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="/assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                                <span class="logo-lg">
+                                    <img src="/assets/images/logo-dark.png" alt="" height="17">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="/assets/images/logo-sm.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="/assets/images/logo-light.png" alt="" height="17">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger material-shadow-none" id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+
+
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <!--                        <div class="dropdown d-md-none topbar-head-dropdown header-item">-->
+                        <!--                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-search-dropdown"-->
+                        <!--                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--                                <i class="bx bx-search fs-22"></i>-->
+                        <!--                            </button>-->
+                        <!--                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">-->
+                        <!--                                <form class="p-3">-->
+                        <!--                                    <div class="form-group m-0">-->
+                        <!--                                        <div class="input-group">-->
+                        <!--                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">-->
+                        <!--                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>-->
+                        <!--                                        </div>-->
+                        <!--                                    </div>-->
+                        <!--                                </form>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+
+                        <div class="dropdown ms-1 topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="/assets/images/flags/us.svg" alt="Header Language" height="20" class="rounded">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en" title="English">
+                                    <img src="/assets/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp" title="Spanish">
+                                    <img src="/assets/images/flags/spain.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Española</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr" title="German">
+                                    <img src="/assets/images/flags/germany.svg" alt="user-image" class="me-2 rounded" height="18"> <span class="align-middle">Deutsche</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it" title="Italian">
+                                    <img src="/assets/images/flags/italy.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Italiana</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru" title="Russian">
+                                    <img src="/assets/images/flags/russia.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">русский</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ch" title="Chinese">
+                                    <img src="/assets/images/flags/china.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">中国人</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="fr" title="French">
+                                    <img src="/assets/images/flags/french.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">français</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ar" title="Arabic">
+                                    <img src="/assets/images/flags/ae.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Arabic</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
+                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-notifications-dropdown"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-bell fs-22'></i>
+                                <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
+                                        class="visually-hidden">unread messages</span></span>
+                            </button>
+                        </div>
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn material-shadow-none" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user" src="/assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Masum</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+                                    </span>
+                                </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Balance : <b>$5971.67</b></span>
+                                </a>
+                                <a class="dropdown-item" href="change-password.html">
+                                    <span class="badge bg-success-subtle text-success mt-1 float-end">New</span>
+                                    <i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Settings</span>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle">Help</span>
+                                </a>
+                                <a class="dropdown-item" href="logout.html">
+                                    <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i>
+                                    <span class="align-middle" data-key="t-logout">Logout</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- removeNotificationModal -->
+        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mt-2 text-center">
+                            <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548"
+                                       style="width:100px;height:100px"></lord-icon>
+                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                                <h4>Are you sure ?</h4>
+                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                        </div>
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/assets/images/logo-dark.png" alt="" height="17">
+                    </span>
+                </a>
+
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+
+                    <span class="logo-lg">
+                        <img src="/assets/images/logo-light.png" alt="" height="17">
+                    </span>
+                </a>
+
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div class="dropdown sidebar-user m-1 rounded">
+                <button type="button" class="btn material-shadow-none" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-2">
+                        <img class="rounded header-profile-user" src="/assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                        <span class="text-start">
+                            <span class="d-block fw-medium sidebar-user-name-text">Anna Adame</span>
+                            <span class="d-block fs-14 sidebar-user-name-sub-text"><i class="ri ri-circle-fill fs-10 text-success align-baseline"></i> <span class="align-middle">Online</span></span>
+                        </span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <!-- item-->
+                    <h6 class="dropdown-header">Welcome Anna!</h6>
+                    <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
+                            class="align-middle">Profile</span></a>
+                    <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+                    <a class="dropdown-item" href="apps-tasks-kanban.html"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span
+                            class="align-middle">Taskboard</span></a>
+                    <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$5971.67</b></span></a>
+                    <a class="dropdown-item" href="pages-profile-settings.html"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i
+                            class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                    <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                    <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle"
+                                                                                                                                                   data-key="t-logout">Logout</span></a>
+                </div>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <!-- Super Admin -->
+                        <li class="menu-title"><span data-key="t-menu">#Supper Admin</span></li>
+
+                        <!-- Dashboard -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/dashboard.html">
+                                <i class="ri-dashboard-2-line"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!-- Deposits -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDeposits" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDeposits">
+                                <i class="ri-bank-line"></i>
+                                <span>Deposits</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDeposits">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item"><a href="/p2c.html" class="nav-link">P2C</a></li>
+                                    <li class="nav-item"><a href="/p2p.html" class="nav-link">P2P</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Withdrawals -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarWithdrawals" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                               aria-controls="sidebarWithdrawals">
+                                <i class="ri-bank-line"></i>
+                                <span>Withdrawals</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarWithdrawals">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item"><a href="/withdraw/p2p.html" class="nav-link">P2P</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- SMS Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/sms-management.html">
+                                <i class="ri-message-line"></i>
+                                <span>SMS Management</span>
+                            </a>
+                        </li>
+
+                        <!-- Prepayment Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/prepayment.html">
+                                <i class="ri-hand-coin-line"></i>
+                                <span>Prepayment</span>
+                            </a>
+                        </li>
+
+                        <!-- Merchant Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/merchant-management.html">
+                                <i class="ri-store-3-line"></i>
+                                <span>Merchant Management</span>
+                            </a>
+                        </li>
+
+                        <!-- Agent Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/agent-management.html">
+                                <i class="ri-user-3-line"></i>
+                                <span>Agent Management</span>
+                            </a>
+                        </li>
+
+                        <!-- Bank Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarBankManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                               aria-controls="sidebarBankManagement">
+                                <i class="ri-bank-card-line"></i>
+                                <span>Bank Management</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarBankManagement">
+                                <ul class="nav nav-sm flex-column">
+                                    <!-- Deposit Section with Direct Links -->
+                                    <li class="nav-item">
+                                        <a href="/bank-deposit.html" class="nav-link">Deposit</a>
+                                        <ul class="nav nav-sm flex-column ms-3">
+                                            <li class="nav-item"><a href="/bank-deposit-p2c.html" class="nav-link">P2C</a></li>
+                                            <li class="nav-item"><a href="/bank-deposit-p2p.html" class="nav-link">P2P</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Withdraw Section with Direct Link -->
+                                    <li class="nav-item">
+                                        <a href="/bank-withdraw.html" class="nav-link">Withdraw</a>
+                                        <ul class="nav nav-sm flex-column ms-3">
+                                            <li class="nav-item"><a href="/bank-withdraw-p2p.html" class="nav-link">P2P</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Settlement Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/settlement-management.html">
+                                <i class="ri-bank-card-line"></i>
+                                <span>Settlement Management</span>
+                            </a>
+                        </li>
+
+                        <!-- Settlement Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/staff-management.html">
+                                <i class="ri-bank-card-line"></i>
+                                <span>Staff Management</span>
+                            </a>
+                        </li>
+
+                        <!-- User Management -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarUserManagement" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                               aria-controls="sidebarUserManagement">
+                                <i class="ri-user-settings-line"></i>
+                                <span>Roles & Permission</span>
+                            </a>
+
+                            <div class="collapse menu-dropdown" id="sidebarUserManagement">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item"><a href="/admin.html" class="nav-link">Admin</a></li>
+                                    <li class="nav-item"><a href="/staff.html" class="nav-link">Staff</a></li>
+                                    <li class="nav-item"><a href="/merchant.html" class="nav-link">Merchent</a></li>
+                                    <li class="nav-item"><a href="/agent.html" class="nav-link">Agent</a></li>
+                                    <li class="nav-item"><a href="/roles.html" class="nav-link">Roles</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <h4 class="mb-1">Roles List</h4>
+                    <p class="mb-6">A role provided access to predefined menus and features so that depending on assigned role an administrator can have access to what user
+                        needs.</p>
+                    <!-- Role cards -->
+                    <div class="row g-6">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0">Total 4 users</p>
+                                        <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Vinnie Mostowy" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/5.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Allen Rieske" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/12.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Julee Rossignol" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/6.png" alt="Avatar">
+                                            </li>
+                                            <li class="avatar">
+                                                <span class="avatar-initial rounded-circle pull-up bg-lighter text-body" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                      title="3 more">+3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="role-heading">
+                                            <h5 class="mb-1">Administrator</h5>
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="role-edit-modal">
+                                                <p class="mb-0">Edit Role</p>
+                                            </a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="text-secondary"><i class="ri-file-copy-line ri-22px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0">Total 7 users</p>
+                                        <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Jimmy Ressula" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/4.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="John Doe" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/1.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kristi Lawker" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/2.png" alt="Avatar">
+                                            </li>
+                                            <li class="avatar">
+                                                <span class="avatar-initial rounded-circle pull-up bg-lighter text-body" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                      title="3 more">+3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="role-heading">
+                                            <h5 class="mb-1">Editor</h5>
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="role-edit-modal">
+                                                <p class="mb-0">Edit Role</p>
+                                            </a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="text-secondary"><i class="ri-file-copy-line ri-22px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0">Total 5 users</p>
+                                        <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Andrew Tye" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/6.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Rishi Swaat" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/9.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Rossie Kim" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/12.png" alt="Avatar">
+                                            </li>
+                                            <li class="avatar">
+                                                <span class="avatar-initial rounded-circle pull-up bg-lighter text-body" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                      title="3 more">+3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="role-heading">
+                                            <h5 class="mb-1">Users</h5>
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="role-edit-modal">
+                                                <p class="mb-0">Edit Role</p>
+                                            </a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="text-secondary"><i class="ri-file-copy-line ri-22px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0">Total 3 users</p>
+                                        <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kim Karlos" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/3.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Katy Turner" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/9.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Peter Adward" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/15.png" alt="Avatar">
+                                            </li>
+                                            <li class="avatar">
+                                                <span class="avatar-initial rounded-circle pull-up bg-lighter text-body" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                      title="3 more">+3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="role-heading">
+                                            <h5 class="mb-1">Support</h5>
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="role-edit-modal">
+                                                <p class="mb-0">Edit Role</p>
+                                            </a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="text-secondary"><i class="ri-file-copy-line ri-22px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <p class="mb-0">Total 2 users</p>
+                                        <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kim Merchent" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/10.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Sam D'souza" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/13.png" alt="Avatar">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Nurvi Karlos" class="avatar pull-up">
+                                                <img class="rounded-circle" src="/assets/images/avatars/15.png" alt="Avatar">
+                                            </li>
+                                            <li class="avatar">
+                                                <span class="avatar-initial rounded-circle pull-up bg-lighter text-body" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                      title="3 more">+3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="role-heading">
+                                            <h5 class="mb-1">Restricted User</h5>
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addRoleModal" class="role-edit-modal">
+                                                <p class="mb-0">Edit Role</p>
+                                            </a>
+                                        </div>
+                                        <a href="javascript:void(0);" class="text-secondary"><i class="ri-file-copy-line ri-22px"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="card" style="height: 150px; overflow: hidden;">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="d-flex align-items-end h-100 justify-content-center">
+                                            <img src="/assets/images/avatars/add-new-role-illustration.png" class="img-fluid" alt="Image" width="68">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="card-body text-sm-end text-center ps-sm-0">
+                                            <button data-bs-target="#addRoleModal" data-bs-toggle="modal" class="btn btn-sm btn-primary mb-4 text-nowrap add-new-role">Add Role
+                                            </button>
+                                            <p class="mb-0">Add new role,<br> if it doesn't exist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+        <!--preloader-->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner-border text-primary avatar-sm" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Varying modal content -->
+        <div class="modal fade" id="varyingcontentModal" tabindex="-1" aria-labelledby="varyingcontentModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="varyingcontentModalLabel">Add Wallet: BetConstruct Test</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="wallet_currency" class="col-form-label">Wallet currency <span style="color: red;">*</span></label>
+                                <select id="wallet_currency" class="form-control" name="wallet_currency">
+                                    <option value="BDT">BDT</option>
+                                    <option value="USD">USD</option>
+                                    <option value="INR">INR</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="AUD">AUD</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+                        <button type="button" class="btn btn-primary submit_button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- staticBackdrop Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center p-5">
+                        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#121331,secondary:#08a88a"
+                                   style="width:120px;height:120px"></lord-icon>
+
+                        <div class="mt-4">
+                            <h4 class="mb-3">You've made it!</h4>
+                            <p class="text-muted mb-4"> Wallet created successfully !</p>
+                            <div class="hstack gap-2 justify-content-center">
+                                <a href="javascript:void(0);" class="btn btn-success close_success_button">OK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Varying modal content -->
+        <div class="modal fade" id="updateCartWallet" tabindex="-1" aria-labelledby="updateCartWalletLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="updateCartWalletLabel">Update CAD Wallet: BetConstruct Test</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="update_cart_wallet" class="col-form-label">CAD Balance</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <select id="update_cart_wallet" class="form-control" name="update_cart_wallet">
+                                            <option value="Add Balance">Add Balance</option>
+                                            <option value="Deduct Balance">Deduct Balance</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" id="adjustable_amount" placeholder="Adjustable amount">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 mb-3">
+                                        <label for="settlement_fee" class="col-form-label">Settlement Fee</label>
+                                        <input type="text" class="form-control" id="settlement_fee" placeholder="Settlement Fee" value="2.5%">
+                                    </div>
+
+                                    <div class="col-6 mb-3">
+                                        <label for="settlement_fee_name" class="col-form-label">Name</label>
+                                        <input type="text" class="form-control" id="settlement_fee_name" placeholder="Name">
+                                    </div>
+                                </div>
+
+
+                                <div class="row currency_conversion">
+                                    <!-- Currency Conversion -->
+                                    <div class="col-12">
+                                        <div class="card mb-3">
+                                            <div class="card-header">Currency Conversion</div>
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="mb-3 d-flex justify-content-between">
+                                                    <div class="currency" style="width: 60%; text-align: left;">Currency</div>
+                                                    <div class="rate" style="width: 35%; text-align: left;">Rate</div>
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <label class="me-2 conversion_label">BDT</label>
+                                                    <input type="number" class="form-control conversion_input" value="1">
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <label class="me-2 conversion_label">USD</label>
+                                                    <input type="number" class="form-control conversion_input" value="125">
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <label class="me-2 conversion_label">EUR</label>
+                                                    <input type="number" class="form-control conversion_input" value="127">
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <label class="me-2 conversion_label">INR</label>
+                                                    <input type="number" class="form-control conversion_input" value="2">
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <label class="me-2 conversion_label">PKR</label>
+                                                    <input type="number" class="form-control conversion_input" value="2">
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button class="btn btn-primary w-100">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Deposit -->
+                                    <div class="col-12">
+                                        <div class="card mb-3">
+                                            <div class="card-header">Deposit</div>
+                                            <div class="card-body d-flex flex-column">
+
+                                                <div class="mb-3 d-flex justify-content-between">
+                                                    <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
+                                                    <div class="rate" style="width: 35%; text-align: left;">Deal</div>
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="bkashP2C" class="form-check-input">
+                                                        <label for="bkashP2C" class="form-check-label">bkash P2C</label>
+                                                    </div>
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="nagodP2C" class="form-check-input">
+                                                        <label for="nagodP2C" class="form-check-label">Nagod P2C</label>
+                                                    </div>
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="bkashP2P" class="form-check-input">
+                                                        <label for="bkashP2P" class="form-check-label">bkash P2P</label>
+                                                    </div>
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button class="btn btn-primary w-100">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Withdraw -->
+                                    <div class="col-12">
+                                        <div class="card mb-3">
+                                            <div class="card-header">Withdraw</div>
+                                            <div class="card-body d-flex flex-column">
+
+                                                <div class="mb-3 d-flex justify-content-between">
+                                                    <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
+                                                    <div class="rate" style="width: 35%; text-align: left;">Deal</div>
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="bkashWP2P" class="form-check-input">
+                                                        <label for="bkashWP2P" class="form-check-label">bkash_W P2P</label>
+                                                    </div>
+
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="nagodWP2P" class="form-check-input">
+                                                        <label for="nagodWP2P" class="form-check-label">Nagod_W P2P</label>
+                                                    </div>
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="3.00"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                                    <div class="conversion_label">
+                                                        <input type="checkbox" id="rocketWP2P" class="form-check-input">
+                                                        <label for="rocketWP2P" class="form-check-label">Rocket_W P2P</label>
+                                                    </div>
+
+                                                    <div class="currency_conversion_input_percentage">
+                                                        <div class="input-container">
+                                                            <input type="number" class="form-control" step="0.01" value="1.50"/>
+                                                            <span class="suffix">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button class="btn btn-primary w-100">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary submit_button_update_wallet" style="width: 100%;">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Role Modal -->
+        <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-simple modal-dialog-centered modal-add-new-role">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="text-center mb-6">
+                            <h4 class="role-title mb-2 pb-0">Add New Role</h4>
+                            <p>Set role permissions</p>
+                        </div>
+                        <!-- Add role form -->
+                        <form id="addRoleForm" class="row g-3" onsubmit="return false">
+                            <div class="col-12 mb-3">
+                                <div class="form-floating form-floating-outline">
+                                    <input type="text" id="modalRoleName" name="modalRoleName" class="form-control" placeholder="Enter a role name" tabindex="-1"/>
+                                    <label for="modalRoleName">Role Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5 class="mb-6">Role Permissions</h5>
+                                <!-- Permission table -->
+                                <div class="table-responsive">
+                                    <table class="table table-flush-spacing">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Administrator Access <i class="ri-information-line" data-bs-toggle="tooltip"
+                                                                                                          data-bs-placement="top" title="Allows a full access to the system"></i>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="selectAll"/>
+                                                            <label class="form-check-label" for="selectAll">
+                                                                Select All
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">User Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="userManagementRead"/>
+                                                            <label class="form-check-label" for="userManagementRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="userManagementWrite"/>
+                                                            <label class="form-check-label" for="userManagementWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="userManagementCreate"/>
+                                                            <label class="form-check-label" for="userManagementCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Content Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="contentManagementRead"/>
+                                                            <label class="form-check-label" for="contentManagementRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="contentManagementWrite"/>
+                                                            <label class="form-check-label" for="contentManagementWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="contentManagementCreate"/>
+                                                            <label class="form-check-label" for="contentManagementCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Disputes Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="dispManagementRead"/>
+                                                            <label class="form-check-label" for="dispManagementRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="dispManagementWrite"/>
+                                                            <label class="form-check-label" for="dispManagementWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="dispManagementCreate"/>
+                                                            <label class="form-check-label" for="dispManagementCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Database Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="dbManagementRead"/>
+                                                            <label class="form-check-label" for="dbManagementRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="dbManagementWrite"/>
+                                                            <label class="form-check-label" for="dbManagementWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="dbManagementCreate"/>
+                                                            <label class="form-check-label" for="dbManagementCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Financial Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="finManagementRead"/>
+                                                            <label class="form-check-label" for="finManagementRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="finManagementWrite"/>
+                                                            <label class="form-check-label" for="finManagementWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="finManagementCreate"/>
+                                                            <label class="form-check-label" for="finManagementCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Reporting</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="reportingRead"/>
+                                                            <label class="form-check-label" for="reportingRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="reportingWrite"/>
+                                                            <label class="form-check-label" for="reportingWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="reportingCreate"/>
+                                                            <label class="form-check-label" for="reportingCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">API Control</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="apiRead"/>
+                                                            <label class="form-check-label" for="apiRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="apiWrite"/>
+                                                            <label class="form-check-label" for="apiWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="apiCreate"/>
+                                                            <label class="form-check-label" for="apiCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Repository Management</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="repoRead"/>
+                                                            <label class="form-check-label" for="repoRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="repoWrite"/>
+                                                            <label class="form-check-label" for="repoWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="repoCreate"/>
+                                                            <label class="form-check-label" for="repoCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-nowrap fw-medium">Payroll</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-end">
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="payrollRead"/>
+                                                            <label class="form-check-label" for="payrollRead">
+                                                                Read
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1 me-4 me-lg-12">
+                                                            <input class="form-check-input" type="checkbox" id="payrollWrite"/>
+                                                            <label class="form-check-label" for="payrollWrite">
+                                                                Write
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0 mt-1">
+                                                            <input class="form-check-input" type="checkbox" id="payrollCreate"/>
+                                                            <label class="form-check-label" for="payrollCreate">
+                                                                Create
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- Permission table -->
+                            </div>
+                            <div class="col-12 d-flex flex-wrap justify-content-center gap-4 row-gap-4">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            </div>
+                        </form>
+                        <!--/ Add role form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ Add Role Modal -->
+
+        <!-- JAVASCRIPT -->
+        <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="/assets/libs/node-waves/waves.min.js"></script>
+        <script src="/assets/libs/feather-icons/feather.min.js"></script>
+        <script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+
+        <!-- apexcharts -->
+        <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- Vector map-->
+        <script src="/assets/libs/jsvectormap/jsvectormap.min.js"></script>
+        <script src="/assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+        <!--Swiper slider js-->
+        <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="/assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+        <!-- piecharts init -->
+        <script src="/assets/js/pages/apexcharts-pie.init.js"></script>
+
+
+        <script src="/assets/code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--datatable js-->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+
+        <script src="/assets/cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="/assets/cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <script src="/assets/cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="/assets/js/pages/datatables.init.js"></script>
+
+        <!-- App js -->
+        <script src="/assets/js/app.js"></script>
+
+        <script>
+            $('#bank_deposit_table').DataTable({
+                // "sDom": 'Rfrtlip',
+                "dom": '<"top">rt<"bottom"<"d-flex justify-content-end text-right"lp><"clear">>',
+                "searching": false,
+                "info": false,
+                "scrollX": true,
+            });
+
+            $(document).ready(function () {
+                // When .add_money_popup is clicked, show the modal
+                $('.add_money_popup').on('click', function () {
+                    $('#varyingcontentModal').modal('show');
+                });
+
+                $('.submit_button').on('click', function () {
+                    $('#varyingcontentModal').modal('hide');
+                    $('#staticBackdrop').modal('show');
+                });
+
+                $('.close_success_button').on('click', function () {
+                    $('#staticBackdrop').modal('hide');
+                });
+
+                $('.adjust_amount').on('click', function () {
+                    $('#updateCartWallet').modal('show');
+                });
+
+                $('.submit_button_update_wallet').on('click', function () {
+                    $('#updateCartWallet').modal('hide');
+                });
+            });
+
+        </script>
+
+</body>
+
+</html>
