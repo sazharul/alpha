@@ -1,4 +1,5 @@
 .price_button {
+    display: inline-block;
     background-color: var(--vz-primary);
     border: none;
     color: #fff;
