@@ -39,6 +39,13 @@
     <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+
+<script>
+       const accessToken = localStorage.getItem("accessToken");
+       if (!accessToken) {
+           window.location.href = "/logout.html";
+       }
+</script>
     <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/sohan.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/merchant_settings.css" rel="stylesheet" type="text/css"/>

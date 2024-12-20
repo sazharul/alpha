@@ -32,6 +32,22 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
+<script>
+       const accessToken = localStorage.getItem("accessToken");
+       if (!accessToken) {
+           window.location.href = "/logout.html";
+       }
+</script>
+
+    <script>
+       const accessToken = localStorage.getItem("accessToken");
+       if (!accessToken) {
+           window.location.href = "/logout.html";
+       }
+    </script>
+
+    <script type="module" src="/js/main.js"></script>
+
 </head>
 
 <body>
@@ -457,7 +473,7 @@
                                     <i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle">Help</span>
                                 </a>
-                                <a class="dropdown-item" href="logout.html">
+                                <a class="dropdown-item" href="javascript:void(0)" onclick="handleLogout();">
                                     <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i>
                                     <span class="align-middle" data-key="t-logout">Logout</span>
                                 </a>
