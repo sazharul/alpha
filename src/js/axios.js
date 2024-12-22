@@ -3,7 +3,7 @@ import axios from 'axios';
 // Create an Axios instance with default settings
 const apiClient = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL || 'https://147.79.66.187:8000', // Replace with your API URL or use env variables
-    timeout: 100000, // Timeout for requests (in milliseconds)
+    timeout: 0, // Timeout for requests (in milliseconds)
     headers: {
         'Content-Type': 'application/json', // Default content type
         Accept: 'application/json',         // Accept header
