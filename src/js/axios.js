@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with default settings
 const apiClient = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://147.79.66.187:8000', // Replace with your API URL or use env variables
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://147.79.66.187:8000', // Replace with your API URL or use env variables
     timeout: 10000, // Timeout for requests (in milliseconds)
     headers: {
         'Content-Type': 'application/json', // Default content type
@@ -45,7 +45,7 @@ apiClient.interceptors.response.use(
                 try {
                     // Attempt to refresh the access token
                     const response = await axios.post(
-                        `${import.meta.env.VITE_API_BASE_URL || 'http://147.79.66.187:8000'}/login/refresh/`,
+                        `${import.meta.env.VITE_API_BASE_URL || 'https://147.79.66.187:8000'}/login/refresh/`,
                         {refresh: refreshToken},
                         {
                             headers: {
