@@ -40,12 +40,12 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
-<script>
-       const accessToken = localStorage.getItem("accessToken");
-       if (!accessToken) {
-           window.location.href = "/logout.html";
-       }
-</script>
+    <script>
+        const accessToken = localStorage.getItem("accessToken");
+        if (!accessToken) {
+            window.location.href = "/logout.html";
+        }
+    </script>
     <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/sohan.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/merchant_settings.css" rel="stylesheet" type="text/css"/>
@@ -638,11 +638,12 @@
                                                                 <th scope="col">Agent ID</th>
                                                                 <th scope="col">Agent Name</th>
                                                                 <th scope="col">Agent Email</th>
-                                                                <th scope="col">Agent Logo</th>
+                                                                <th scope="col">Username</th>
+                                                                <th scope="col">Currency</th>
+                                                                <th scope="col">Balance</th>
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
                                                                 <th scope="col">Payment Method</th>
-                                                                <th scope="col">Wallet</th>
                                                                 <th scope="col">Status</th>
                                                                 <th scope="col">Action</th>
                                                             </tr>
@@ -657,24 +658,14 @@
                                                                 <td>#MID001</td>
                                                                 <td>Agent A</td>
                                                                 <td>merchantA@example.com</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
+
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
+
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -701,18 +692,13 @@
                                                                 <td>#MID002</td>
                                                                 <td>Agent B</td>
                                                                 <td>merchantB@example.com</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
                                                                 <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -739,18 +725,13 @@
                                                                 <td>#MID003</td>
                                                                 <td>Agent C</td>
                                                                 <td>merchantC@example.com</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
                                                                 <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -777,18 +758,13 @@
                                                                 <td>#MID004</td>
                                                                 <td>Agent D</td>
                                                                 <td>merchantD@example.com</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
                                                                 <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -815,18 +791,13 @@
                                                                 <td>#MID005</td>
                                                                 <td>Agent E</td>
                                                                 <td>merchantE@example.com</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
                                                                 <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -855,18 +826,13 @@
                                                                 <td>#MID001</td>
                                                                 <td>Agent A</td>
                                                                 <td>merchantA@example.com</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
                                                                 <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -893,18 +859,13 @@
                                                                 <td>#MID002</td>
                                                                 <td>Agent B</td>
                                                                 <td>merchantB@example.com</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
                                                                 <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -931,18 +892,13 @@
                                                                 <td>#MID003</td>
                                                                 <td>Agent C</td>
                                                                 <td>merchantC@example.com</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
                                                                 <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -969,18 +925,13 @@
                                                                 <td>#MID004</td>
                                                                 <td>Agent D</td>
                                                                 <td>merchantD@example.com</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
                                                                 <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -1009,18 +960,13 @@
                                                                 <td>#MID005</td>
                                                                 <td>Agent E</td>
                                                                 <td>merchantE@example.com</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
+                                                                <td>username1</td>
+                                                                <td>BDT</td>
+                                                                <td>1520</td>
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
                                                                 <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
@@ -1146,7 +1092,7 @@
                                     </select>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" id="adjustable_amount" placeholder="Adjustable amount">
+                                    <input type="text" class="form-control" id="adjustable_amount" placeholder="Adjustable amount"/>
                                 </div>
                             </div>
 
