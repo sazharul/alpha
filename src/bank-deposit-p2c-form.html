@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default"
       data-theme-colors="default">
+
+
+<!-- Mirrored from themesbrand.com/velzon/html/master/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:54:18 GMT -->
 <head>
 
     <meta charset="utf-8"/>
@@ -17,7 +20,6 @@
     <!--Swiper slider css-->
     <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
 
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
 
     <!--datatable css-->
     <link rel="stylesheet" href="/assets/cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"/>
@@ -44,19 +46,6 @@
             //window.location.href = "/logout.html";
         }
     </script>
-
-    <link href="/assets/css/merchant_settings.css" rel="stylesheet" type="text/css"/>
-
-    <style>
-
-        @media (max-width: 768px) {
-            .agent_cad_balance {
-                padding-right: 35px !important;
-                padding-left: 10px !important;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
 
 </head>
 
@@ -101,6 +90,23 @@
                     </div>
 
                     <div class="d-flex align-items-center">
+
+                        <!--                        <div class="dropdown d-md-none topbar-head-dropdown header-item">-->
+                        <!--                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-search-dropdown"-->
+                        <!--                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--                                <i class="bx bx-search fs-22"></i>-->
+                        <!--                            </button>-->
+                        <!--                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">-->
+                        <!--                                <form class="p-3">-->
+                        <!--                                    <div class="form-group m-0">-->
+                        <!--                                        <div class="input-group">-->
+                        <!--                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">-->
+                        <!--                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>-->
+                        <!--                                        </div>-->
+                        <!--                                    </div>-->
+                        <!--                                </form>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
 
                         <div class="dropdown ms-1 topbar-head-dropdown header-item">
                             <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown"
@@ -359,7 +365,7 @@
                             </a>
                         </li>
 
-                        <!-- Agent Management -->
+                        <!-- Merchant Management -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="/merchant-management.html">
                                 <i class="ri-store-3-line"></i>
@@ -446,16 +452,18 @@
 
             <div class="page-content">
                 <div class="container-fluid">
+
                     <!-- start page title -->
                     <div class="row">
                         <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent" style="margin-bottom: 15px;">
-                                <h4 class="mb-sm-0">Agent Settings</h4>
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
+                                <h4 class="mb-sm-0">P2C Form</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Agent Management</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Agent Settings</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Bank Management</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Deposit</a></li>
+                                        <li class="breadcrumb-item active">P2C Form</li>
                                     </ol>
                                 </div>
 
@@ -463,316 +471,231 @@
                         </div>
                     </div>
                     <!-- end page title -->
-                </div>
 
 
-                <div class="container-fluid" style="background: #FFFFFF; padding: 20px;">
                     <div class="row">
-
-                        <!--                        <div class="col-lg-6">-->
-                        <!--                            <div class="mb-3">-->
-                        <!--                                <label for="file_upload" class="form-label">Upload Logo</label>-->
-                        <!--                                <input type="file" class="form-control" id="file_upload">-->
-                        <!--                            </div>-->
-                        <!--                            &lt;!&ndash; end card &ndash;&gt;-->
-                        <!--                        </div> &lt;!&ndash; end col &ndash;&gt;-->
-
-                        <!--                        <div class="col-12">-->
-                        <!--                            <div class="api_key_section row">-->
-                        <!--                                &lt;!&ndash; API Key Section &ndash;&gt;-->
-                        <!--                                <div class="mb-3 col-md-6 col-12">-->
-                        <!--                                    <label for="apiKey" class="form-label">API Key</label>-->
-                        <!--                                    <div class="input-group">-->
-                        <!--                                        <input type="text" class="form-control" id="apiKey" value="af6352f3419817a0c33593017441eb85c" readonly>-->
-                        <!--                                        <button class="btn btn-link waves-effect" type="button">-->
-                        <!--                                            <img src="/assets/copy_icon.svg" alt="copy">-->
-                        <!--                                        </button>-->
-                        <!--                                    </div>-->
-                        <!--                                    <button class="btn btn-primary mt-2" type="button">Generate</button>-->
-                        <!--                                </div>-->
-
-                        <!--                                &lt;!&ndash; Secret Key Section &ndash;&gt;-->
-                        <!--                                <div class="mb-3 col-md-6 col-12">-->
-                        <!--                                    <label for="secretKey" class="form-label">Secret Key</label>-->
-                        <!--                                    <div class="input-group">-->
-                        <!--                                        <input type="text" class="form-control" id="secretKey" value="af6352f3419817a0c33593017441eb85c" readonly>-->
-                        <!--                                        <button class="btn btn-link waves-effect" type="button">-->
-                        <!--                                            <img src="/assets/copy_icon.svg" alt="copy">-->
-                        <!--                                        </button>-->
-                        <!--                                    </div>-->
-                        <!--                                    <button class="btn btn-primary mt-2" type="button">Generate</button>-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-
-                        <!--                        <div class="col-12">-->
-                        <!--                            <div class="mb-3 ip_witelisting">-->
-                        <!--                                <label for="ip_whitelisting" class="form-label">IP Whitelisting</label>-->
-                        <!--                                <select class="js_tags_created_selected" name="states[]" id="ip_whitelisting" multiple="multiple">-->
-                        <!--                                </select>-->
-
-                        <!--                                <button class="btn btn-primary mt-2" type="button">Update</button>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <!--                    </div>-->
-
-                        <div class="mb-3">
-                            <label for="update_cart_wallet" class="col-form-label">CAD Balance</label>
-                            <div class="row">
-                                <div class="col-sm-6 col-12 agent_cad_balance" style="padding-right: 25px;">
-                                    <select id="update_cart_wallet" class="form-control" name="update_cart_wallet">
-                                        <option value="Add Balance">Add Balance</option>
-                                        <option value="Deduct Balance">Deduct Balance</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6 col-12 agent_cad_balance" style="padding-left: 0px; padding-right: 35px;">
-                                    <input type="text" class="form-control" id="adjustable_amount" placeholder="Adjustable amount"/>
-                                </div>
-                            </div>
+                        <!-- Bank Section -->
+                        <div class="col-md-6 mb-3">
+                            <label for="bank" class="form-label">Bank</label>
+                            <select id="bank" class="form-select">
+                                <option value="bkash">bKash P2C</option>
+                                <option value="nagad">Nagad P2C</option>
+                            </select>
                         </div>
 
-                        <div class="row currency_conversion">
-                            <!-- Currency Conversion -->
-                            <!--                            <div class="col-md-4 col-12">-->
-                            <!--                                <div class="card">-->
-                            <!--                                    <div class="card-header">Currency Conversion</div>-->
-                            <!--                                    <div class="card-body d-flex flex-column">-->
-                            <!--                                        <div class="mb-3 d-flex justify-content-between">-->
-                            <!--                                            <div class="currency" style="width: 60%; text-align: left;">Currency</div>-->
-                            <!--                                            <div class="rate" style="width: 35%; text-align: left;">Rate</div>-->
-                            <!--                                        </div>-->
-
-                            <!--                                        <div class="mb-3 d-flex justify-content-between align-items-center">-->
-                            <!--                                            <label class="me-2 conversion_label">BDT</label>-->
-                            <!--                                            <input type="number" class="form-control conversion_input" value="1">-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="mb-3 d-flex justify-content-between align-items-center">-->
-                            <!--                                            <label class="me-2 conversion_label">USD</label>-->
-                            <!--                                            <input type="number" class="form-control conversion_input" value="125">-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="mb-3 d-flex justify-content-between align-items-center">-->
-                            <!--                                            <label class="me-2 conversion_label">EUR</label>-->
-                            <!--                                            <input type="number" class="form-control conversion_input" value="127">-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="mb-3 d-flex justify-content-between align-items-center">-->
-                            <!--                                            <label class="me-2 conversion_label">INR</label>-->
-                            <!--                                            <input type="number" class="form-control conversion_input" value="2">-->
-                            <!--                                        </div>-->
-                            <!--                                        <div class="mb-3 d-flex justify-content-between align-items-center">-->
-                            <!--                                            <label class="me-2 conversion_label">PKR</label>-->
-                            <!--                                            <input type="number" class="form-control conversion_input" value="2">-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="card-footer text-center">-->
-                            <!--                                        <button class="btn btn-primary w-100">Update</button>-->
-                            <!--                                    </div>-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-
-                            <!-- Deposit -->
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <div class="card-header">Deposit</div>
-                                    <div class="card-body d-flex flex-column">
-
-                                        <div class="mb-3 d-flex justify-content-between">
-                                            <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                            <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                        </div>
-
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="bkashP2C" class="form-check-input">
-                                                <label for="bkashP2C" class="form-check-label">bkash P2C</label>
-                                            </div>
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="nagodP2C" class="form-check-input">
-                                                <label for="nagodP2C" class="form-check-label">Nagod P2C</label>
-                                            </div>
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="bkashP2P" class="form-check-input">
-                                                <label for="bkashP2P" class="form-check-label">bkash P2P</label>
-                                            </div>
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <button class="btn btn-primary w-100">Update</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Withdraw -->
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <div class="card-header">Withdraw</div>
-                                    <div class="card-body d-flex flex-column">
-
-                                        <div class="mb-3 d-flex justify-content-between">
-                                            <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                            <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                        </div>
-
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="bkashWP2P" class="form-check-input">
-                                                <label for="bkashWP2P" class="form-check-label">bkash_W P2P</label>
-                                            </div>
-
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="nagodWP2P" class="form-check-input">
-                                                <label for="nagodWP2P" class="form-check-label">Nagod_W P2P</label>
-                                            </div>
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 d-flex justify-content-between align-items-center">
-                                            <div class="conversion_label">
-                                                <input type="checkbox" id="rocketWP2P" class="form-check-input">
-                                                <label for="rocketWP2P" class="form-check-label">Rocket_W P2P</label>
-                                            </div>
-
-                                            <div class="currency_conversion_input_percentage">
-                                                <div class="input-container">
-                                                    <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                    <span class="suffix">%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <button class="btn btn-primary w-100">Update</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- Business Name -->
+                        <div class="col-md-6 mb-3">
+                            <label for="businessName" class="form-label">Business Name</label>
+                            <input type="text" id="businessName" class="form-control" placeholder="Enter Business Name">
                         </div>
 
-                        <div class="row">
-                            <!-- Reset Password Section -->
-                            <div class="col-md-6 api_key_section">
-                                <label for="newPassword" class="form-label">Reset Password</label>
-                                <div class="input-group mb-3">
-                                    <input type="text" id="newPassword" class="form-control" placeholder="New Password">
-                                    <button class="btn btn-link waves-effect" type="button">
-                                        <img src="/assets/copy_icon.svg" alt="copy">
-                                    </button>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-primary">Auto Generate</button>
-                                    <button class="btn btn-primary">Update</button>
-                                </div>
-                            </div>
+                        <!-- Agent -->
+                        <div class="col-md-6 mb-3">
+                            <label for="agent" class="form-label">Agent</label>
+                            <select id="agent" class="form-select">
+                                <option value="">Select Agent</option>
+                                <!-- Add options dynamically -->
+                            </select>
                         </div>
 
+                        <!-- Username / MID -->
+                        <div class="col-md-6 mb-3">
+                            <label for="username" class="form-label">Username / MID</label>
+                            <input type="text" id="username" class="form-control" placeholder="Enter Username or MID">
+                        </div>
+
+                        <!-- App Key / Public Key -->
+                        <div class="col-md-6 mb-3">
+                            <label for="appKey" class="form-label">App Key / Public Key</label>
+                            <input type="text" id="appKey" class="form-control" placeholder="Enter App Key / Public Key">
+                        </div>
+
+                        <!-- App Secret / Private Key -->
+                        <div class="col-md-6 mb-3">
+                            <label for="appSecret" class="form-label">App Secret / Private Key</label>
+                            <input type="text" id="appSecret" class="form-control" placeholder="Enter App Secret / Private Key">
+                        </div>
+
+                        <!-- Password -->
+                        <div class="col-md-6 mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" id="password" class="form-control" placeholder="Enter Password">
+                        </div>
+
+                        <!-- Minimum Limit -->
+                        <div class="col-md-6 mb-3">
+                            <label for="minLimit" class="form-label">Minimum Limit</label>
+                            <input type="number" id="minLimit" class="form-control" placeholder="Enter Minimum Limit">
+                        </div>
+
+                        <!-- Maximum Limit -->
+                        <div class="col-md-6 mb-3">
+                            <label for="maxLimit" class="form-label">Maximum Limit</label>
+                            <input type="number" id="maxLimit" class="form-control" placeholder="Enter Maximum Limit">
+                        </div>
+
+                        <!-- Daily Limit -->
+                        <div class="col-md-6 mb-3">
+                            <label for="dailyLimit" class="form-label">Daily Limit</label>
+                            <input type="number" id="dailyLimit" class="form-control" placeholder="Enter Daily Limit">
+                        </div>
+
+                        <!-- Monthly Limit -->
+                        <div class="col-md-6 mb-3">
+                            <label for="monthlyLimit" class="form-label">Monthly Limit</label>
+                            <input type="number" id="monthlyLimit" class="form-control" placeholder="Enter Monthly Limit">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="col-md-12 d-flex justify-content-end gap-2">
+                            <button class="btn btn-secondary">Cancel</button>
+                            <button class="btn btn-primary">Save</button>
+                        </div>
                     </div>
-                    <!-- container-fluid -->
+
+
                 </div>
-                <!-- End Page-content -->
+                <!-- container-fluid -->
             </div>
-            <!-- end main content-->
-
+            <!-- End Page-content -->
         </div>
-        <!-- END layout-wrapper -->
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
 
 
-        <!--preloader-->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner-border text-primary avatar-sm" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
             </div>
         </div>
+    </div>
 
 
-        <!-- JAVASCRIPT -->
-        <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="/assets/libs/node-waves/waves.min.js"></script>
-        <script src="/assets/libs/feather-icons/feather.min.js"></script>
-        <script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
-        <script src="/assets/js/plugins.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="/assets/libs/node-waves/waves.min.js"></script>
+    <script src="/assets/libs/feather-icons/feather.min.js"></script>
+    <script src="/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="/assets/js/plugins.js"></script>
 
-        <!-- apexcharts -->
-        <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- apexcharts -->
+    <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
 
-        <!-- Vector map-->
-        <script src="/assets/libs/jsvectormap/jsvectormap.min.js"></script>
-        <script src="/assets/libs/jsvectormap/maps/world-merc.js"></script>
+    <!-- Vector map-->
+    <script src="/assets/libs/jsvectormap/jsvectormap.min.js"></script>
+    <script src="/assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-        <!--Swiper slider js-->
-        <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!--Swiper slider js-->
+    <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Dashboard init -->
-        <script src="/assets/js/pages/dashboard-ecommerce.init.js"></script>
+    <!-- Dashboard init -->
+    <script src="/assets/js/pages/dashboard-ecommerce.init.js"></script>
 
-        <!-- piecharts init -->
-        <script src="/assets/js/pages/apexcharts-pie.init.js"></script>
+    <!-- piecharts init -->
+    <script src="/assets/js/pages/apexcharts-pie.init.js"></script>
 
 
-        <script src="/assets/code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!--datatable js-->
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+    <script src="/assets/code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--datatable js-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
 
-        <script src="/assets/cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-        <script src="/assets/cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-        <script src="/assets/cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
-        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-        <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
-        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-        <script src="/assets/cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-        <script src="/assets/js/pages/datatables.init.js"></script>
+    <script src="/assets/cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="/assets/cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script src="/assets/cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="/assets/cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="/assets/js/pages/datatables.init.js"></script>
 
-        <!--select2 cdn-->
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- App js -->
+    <script src="/assets/js/app.js"></script>
 
-        <script src="/assets/js/pages/select2.init.js"></script>
+    <script>
+        $('#bank_deposit_table').DataTable({
+            // "sDom": 'Rfrtlip',
+            "dom": '<"top">rt<"bottom"<"d-flex justify-content-end text-right"lp><"clear">>',
+            "searching": false,
+            "info": false,
+            "scrollX": true,
+        });
 
-        <!-- App js -->
-        <script src="/assets/js/app.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".js_tags_created_selected").select2({
-                    tags: true,
-                })
-            });
-        </script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const bankSelect = document.getElementById("bank");
+
+            // Elements to toggle dynamically
+            const usernameField = document.getElementById("username");
+            const usernameLabel = document.querySelector('label[for="username"]');
+
+            const appKeyField = document.getElementById("appKey");
+            const appKeyLabel = document.querySelector('label[for="appKey"]');
+
+            const appSecretField = document.getElementById("appSecret");
+            const appSecretLabel = document.querySelector('label[for="appSecret"]');
+
+            const passwordField = document.getElementById("password");
+            const passwordLabel = document.querySelector('label[for="password"]');
+
+            // Function to update fields based on selected bank
+            const updateFields = () => {
+                const selectedValue = bankSelect.value;
+
+                // Update Username/MID label and placeholder
+                if (selectedValue === "bkash") {
+                    usernameLabel.textContent = "Username";
+                    usernameField.placeholder = "Enter Username";
+                    usernameField.parentElement.style.display = "block"; // Show for bKash
+                } else if (selectedValue === "nagad") {
+                    usernameLabel.textContent = "MID";
+                    usernameField.placeholder = "Enter MID";
+                    usernameField.parentElement.style.display = "block"; // Show for Nagad
+                }
+
+                // Update App Key/Public Key label and placeholder
+                if (selectedValue === "bkash") {
+                    appKeyLabel.textContent = "App Key";
+                    appKeyField.placeholder = "Enter App Key";
+                } else if (selectedValue === "nagad") {
+                    appKeyLabel.textContent = "Public Key";
+                    appKeyField.placeholder = "Enter Public Key";
+                }
+
+                // Update App Secret/Private Key label and placeholder
+                if (selectedValue === "bkash") {
+                    appSecretLabel.textContent = "App Secret";
+                    appSecretField.placeholder = "Enter App Secret";
+                } else if (selectedValue === "nagad") {
+                    appSecretLabel.textContent = "Private Key";
+                    appSecretField.placeholder = "Enter Private Key";
+                }
+
+                // Show or hide Password field based on bank value
+                if (selectedValue === "bkash") {
+                    passwordLabel.textContent = "Password";
+                    passwordField.placeholder = "Enter Password";
+                    passwordField.parentElement.style.display = "block"; // Show Password for bKash
+                } else if (selectedValue === "nagad") {
+                    passwordField.parentElement.style.display = "none"; // Hide Password for Nagad
+                }
+            };
+
+            // Attach event listener to the bank select dropdown
+            bankSelect.addEventListener("change", updateFields);
+
+            // Initialize fields based on default selected value
+            updateFields();
+        });
+
+    </script>
+
 </body>
 
 </html>

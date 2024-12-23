@@ -35,6 +35,7 @@ export default defineConfig({
                 merchant_management: path.resolve(__dirname, 'src', 'merchant-management.html'), // Specify the main entry point
                 merchant_settings: path.resolve(__dirname, 'src', 'merchant-settings.html'), // Specify the main entry point
                 bank_deposit_p2c: path.resolve(__dirname, 'src', 'bank-deposit-p2c.html'), // Specify the main entry point
+                bank_deposit_p2c_form: path.resolve(__dirname, 'src', 'bank-deposit-p2c-form.html'), // Specify the main entry point
                 settlement_management: path.resolve(__dirname, 'src', 'settlement-management.html'), // Specify the main entry point
                 signin: path.resolve(__dirname, 'src', 'signin.html'), // Specify the main entry point
                 signup: path.resolve(__dirname, 'src', 'signup.html'), // Specify the main entry point

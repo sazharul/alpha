@@ -40,12 +40,12 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
-<script>
-       const accessToken = localStorage.getItem("accessToken");
-       if (!accessToken) {
-           //window.location.href = "/logout.html";
-       }
-</script>
+    <script>
+        const accessToken = localStorage.getItem("accessToken");
+        if (!accessToken) {
+            //window.location.href = "/logout.html";
+        }
+    </script>
 
 </head>
 
@@ -583,9 +583,10 @@
                                             <div class="card-header align-items-center d-flex">
                                                 <h4 class="card-title mb-0 flex-grow-1">P2C</h4>
 
-                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i
-                                                        class="ri-add-line align-bottom me-1"></i> Add Bank
-                                                </button>
+                                                <a href="bank-deposit-p2c-form.html" class="btn btn-success create-btn">
+                                                    <i class="ri-add-line align-bottom me-1"></i> Add Bank
+                                                </a>
+
                                             </div>
 
                                             <div class="card-body">
