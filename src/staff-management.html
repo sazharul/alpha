@@ -40,12 +40,12 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
-<script>
-       const accessToken = localStorage.getItem("accessToken");
-       if (!accessToken) {
-           //window.location.href = "/logout.html";
-       }
-</script>
+    <script>
+        const accessToken = localStorage.getItem("accessToken");
+        if (!accessToken) {
+            //window.location.href = "/logout.html";
+        }
+    </script>
     <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/sohan.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/merchant_settings.css" rel="stylesheet" type="text/css"/>
@@ -639,11 +639,13 @@
                                                                 <th scope="col">Staff ID</th>
                                                                 <th scope="col">Staff Name</th>
                                                                 <th scope="col">Staff Email</th>
-                                                                <th scope="col">Staff Logo</th>
+<!--                                                                <th scope="col">Staff Logo</th>-->
+                                                                <th scope="col">User Name</th>
+                                                                <th scope="col">Role</th>
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
-                                                                <th scope="col">Payment Method</th>
-                                                                <th scope="col">Wallet</th>
+<!--                                                                <th scope="col">Payment Method</th>-->
+<!--                                                                <th scope="col">Wallet</th>-->
                                                                 <th scope="col">Status</th>
                                                                 <th scope="col">Action</th>
                                                             </tr>
@@ -658,38 +660,40 @@
                                                                 <td>#MID001</td>
                                                                 <td>Staff A</td>
                                                                 <td>merchantA@example.com</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>-->
+                                                                <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>bKash</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2">
-                                                                                <img class="add_money_popup" style="width: 18px;" src="/assets/money-add.svg" alt="add money">
-                                                                            </a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2">-->
+<!--                                                                                <img class="add_money_popup" style="width: 18px;" src="/assets/money-add.svg" alt="add money">-->
+<!--                                                                            </a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -702,32 +706,34 @@
                                                                 <td>#MID002</td>
                                                                 <td>Staff B</td>
                                                                 <td>merchantB@example.com</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userA</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Rocket</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -740,32 +746,34 @@
                                                                 <td>#MID003</td>
                                                                 <td>Staff C</td>
                                                                 <td>merchantC@example.com</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userC</td> <!-- User Name -->
+                                                                <td>Staff</td> <!-- Role -->
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
-                                                                <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Nagad</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -778,32 +786,34 @@
                                                                 <td>#MID004</td>
                                                                 <td>Staff D</td>
                                                                 <td>merchantD@example.com</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>bKash</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -816,32 +826,34 @@
                                                                 <td>#MID005</td>
                                                                 <td>Staff E</td>
                                                                 <td>merchantE@example.com</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Rocket</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -856,32 +868,34 @@
                                                                 <td>#MID001</td>
                                                                 <td>Staff A</td>
                                                                 <td>merchantA@example.com</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-12 10:00:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>bKash</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -894,32 +908,34 @@
                                                                 <td>#MID002</td>
                                                                 <td>Staff B</td>
                                                                 <td>merchantB@example.com</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-13 09:00:00</td>
                                                                 <td>2024-11-13 10:30:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Rocket</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -932,32 +948,34 @@
                                                                 <td>#MID003</td>
                                                                 <td>Staff C</td>
                                                                 <td>merchantC@example.com</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-14 08:00:00</td>
                                                                 <td>2024-11-14 11:00:00</td>
-                                                                <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Nagad</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -970,32 +988,34 @@
                                                                 <td>#MID004</td>
                                                                 <td>Staff D</td>
                                                                 <td>merchantD@example.com</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-15 07:00:00</td>
                                                                 <td>2024-11-15 09:30:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>bKash</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-success-subtle text-success">Active</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -1010,32 +1030,34 @@
                                                                 <td>#MID005</td>
                                                                 <td>Staff E</td>
                                                                 <td>merchantE@example.com</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
+<!--                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>-->
+                                                                 <td>userB</td> <!-- User Name -->
+                                                                <td>Manager</td> <!-- Role -->
                                                                 <td>2024-11-16 06:00:00</td>
                                                                 <td>2024-11-16 08:00:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
+<!--                                                                <td>Rocket</td>-->
+<!--                                                                <td>-->
+<!--                                                                    <div class="price_button">-->
+<!--                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>-->
+<!--                                                                        <button type="button" class="adjust_amount">-->
+<!--                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>-->
+<!--                                                                        </button>-->
+<!--                                                                    </div>-->
+<!--                                                                </td>-->
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="#" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+<!--                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"-->
+<!--                                                                                                                      src="/assets/money-add.svg"-->
+<!--                                                                                                                      alt="add money"></a>-->
+                                                                            <a href="staff-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
 
                                                                         </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
+<!--                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">-->
+<!--                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">-->
+<!--                                                                        </div>-->
                                                                     </div>
                                                                 </td>
                                                             </tr>

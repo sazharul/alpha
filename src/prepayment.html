@@ -40,12 +40,12 @@
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
 
-<script>
-       const accessToken = localStorage.getItem("accessToken");
-       if (!accessToken) {
-           //window.location.href = "/logout.html";
-       }
-</script>
+    <script>
+        const accessToken = localStorage.getItem("accessToken");
+        if (!accessToken) {
+            //window.location.href = "/logout.html";
+        }
+    </script>
 
 </head>
 
@@ -604,22 +604,107 @@
                                                 <h4 class="card-title mb-2 flex-grow-1">Prepayment</h4>
                                                 <div class="d-flex flex-wrap gap-2">
                                                     <!-- Button 1 -->
-                                                    <button
-                                                            type="button"
-                                                            class="btn btn-info create-btn btn-sm"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#api-key-modal">
+                                                    <button type="button" class="btn btn-info create-btn btn-sm exchange_rate_button">
                                                         <i class="ri-add-line align-bottom me-1"></i> Exchange Rate
                                                     </button>
 
+                                                    <!-- Varying modal content -->
+                                                    <div class="modal fade" id="exchangeRateModal" tabindex="-1" aria-labelledby="exchangeRateModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exchangeRateModalLabel">Exchange Rate</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="mb-3">
+                                                                            <div class="row">
+                                                                                <div class="col-6">
+                                                                                    <label for="update_cart_wallet" class="col-form-label">Select Currency</label>
+                                                                                    <select id="update_cart_wallet" class="form-control" name="update_cart_wallet">
+                                                                                        <option value="BDT">BDT</option>
+                                                                                        <option value="USD">USD</option>
+                                                                                        <option value="INR">INR</option>
+                                                                                        <option value="EUR">EUR</option>
+                                                                                        <option value="GBP">GBP</option>
+                                                                                        <option value="CAD">CAD</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-6">
+                                                                                    <label for="adjustable_amount" class="col-form-label">Exchange Rate</label>
+                                                                                    <input type="text" class="form-control" id="adjustable_amount" placeholder="Exchange Rate"/>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-primary submit_button" data-bs-dismiss="modal">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                     <!-- Button 2 -->
-                                                    <button
-                                                            type="button"
-                                                            class="btn btn-success create-btn btn-sm"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#api-key-modal">
+                                                    <button type="button"
+                                                            class="btn btn-success create-btn btn-sm add_prepayment_button">
                                                         <i class="ri-add-line align-bottom me-1"></i> Add Prepayment
                                                     </button>
+
+                                                    <!-- Varying modal content -->
+                                                    <div class="modal fade" id="addPrepaymentModal" tabindex="-1" aria-labelledby="addPrepaymentModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="addPrepaymentModalLabel">Add Prepayment</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="mb-3">
+                                                                            <label for="select_agent" class="col-form-label">Select agent<span
+                                                                                    style="color: red;">*</span></label>
+                                                                            <select id="select_agent" class="form-control" name="select_agent">
+                                                                                <option value="agent1">Agent 1</option>
+                                                                                <option value="agent2">Agent 2</option>
+                                                                                <option value="agent3">Agent 3</option>
+                                                                                <option value="agent4">Agent 4</option>
+                                                                                <option value="agent5">Agent 5</option>
+                                                                            </select>
+                                                                        </div>
+
+
+                                                                        <div class="mb-3">
+                                                                            <label for="amount_usdt" class="col-form-label">Amount (USDT)<span
+                                                                                    style="color: red;">*</span></label>
+                                                                            <input type="text" class="form-control" id="amount_usdt" placeholder="Amount (USDT)"/>
+                                                                        </div>
+
+                                                                        <div class="mb-3">
+                                                                            <label for="transaction_hash" class="col-form-label">Transaction Hash<span
+                                                                                    style="color: red;">*</span></label>
+                                                                            <input type="text" class="form-control" id="transaction_hash" placeholder="Transaction Hash"/>
+                                                                        </div>
+
+
+                                                                        <div class="mb-3">
+                                                                            <label for="notes" class="col-form-label">Notes</label>
+                                                                            <textarea class="form-control" id="notes" placeholder="Notes"></textarea>
+                                                                        </div>
+
+                                                                    </form>
+                                                                </div>
+
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                                                    <button type="button" class="btn btn-primary submit_button" data-bs-dismiss="modal">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
 
@@ -1011,8 +1096,13 @@
             "info": false,
             "scrollX": true,
         });
+        $(document).ready(function () {
+            $('.exchange_rate_button').on('click', function () {
+                $('#exchangeRateModal').modal('show');
+            });
+
+            $('.add_prepayment_button').on('click', function () {
+                $('#addPrepaymentModal').modal('show');
+            });
+        });
     </script>
-
-</body>
-
-</html>

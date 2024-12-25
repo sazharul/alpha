@@ -36,6 +36,7 @@ export default defineConfig({
                 merchant_settings: path.resolve(__dirname, 'src', 'merchant-settings.html'), // Specify the main entry point
                 bank_deposit_p2c: path.resolve(__dirname, 'src', 'bank-deposit-p2c.html'), // Specify the main entry point
                 bank_deposit_p2c_form: path.resolve(__dirname, 'src', 'bank-deposit-p2c-form.html'), // Specify the main entry point
+                bank_deposit_p2p_form: path.resolve(__dirname, 'src', 'bank-deposit-p2p.html'), // Specify the main entry point
                 settlement_management: path.resolve(__dirname, 'src', 'settlement-management.html'), // Specify the main entry point
                 signin: path.resolve(__dirname, 'src', 'signin.html'), // Specify the main entry point
                 signup: path.resolve(__dirname, 'src', 'signup.html'), // Specify the main entry point
@@ -46,6 +47,7 @@ export default defineConfig({
                 agent_management: path.resolve(__dirname, 'src', 'agent-management.html'), // Specify the main entry point
                 agent_settings: path.resolve(__dirname, 'src', 'agent-settings.html'), // Specify the main entry point
                 staff_management: path.resolve(__dirname, 'src', 'staff-management.html'), // Specify the main entry point
+                staff_settings: path.resolve(__dirname, 'src', 'staff-settings.html'), // Specify the main entry point
                 change_password: path.resolve(__dirname, 'src', 'change-password.html'), // Specify the main entry point
                 roles: path.resolve(__dirname, 'src', 'roles.html'), // Specify the main entry point
             },

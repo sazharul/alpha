@@ -46,10 +46,6 @@
             //window.location.href = "/logout.html";
         }
     </script>
-    <link href="/assets/css/special.css" rel="stylesheet" type="text/css"/>
-    <link href="/assets/css/sohan.css" rel="stylesheet" type="text/css"/>
-    <link href="/assets/css/merchant_settings.css" rel="stylesheet" type="text/css"/>
-
 
 </head>
 
@@ -461,11 +457,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between bg-galaxy-transparent">
-                                <h4 class="mb-sm-0">Marchant Management</h4>
+                                <h4 class="mb-sm-0">P2P</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Marchant Management</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Bank Management</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Deposit</a></li>
+                                        <li class="breadcrumb-item active">P2P</li>
                                     </ol>
                                 </div>
 
@@ -508,7 +506,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Marchant</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Transaction</p>
                                         </div>
                                     </div>
 
@@ -533,7 +531,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Active Marchant</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Usages</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -556,7 +554,7 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-grow-1 overflow-hidden">
-                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">TOTAL Currency Conversion</p>
+                                            <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Active Banks</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mt-4">
@@ -572,6 +570,7 @@
                                 </div><!-- end card body -->
                             </div><!-- end card -->
                         </div><!-- end col -->
+
                     </div> <!-- end row-->
 
                     <div class="row">
@@ -582,11 +581,12 @@
                                     <div class="col-12">
                                         <div class="card">
                                             <div class="card-header align-items-center d-flex">
-                                                <h4 class="card-title mb-0 flex-grow-1">Marchants</h4>
+                                                <h4 class="card-title mb-0 flex-grow-1">P2P</h4>
 
-                                                <button type="button" class="btn btn-success create-btn" data-bs-toggle="modal" data-bs-target="#api-key-modal"><i
-                                                        class="ri-add-line align-bottom me-1"></i> Add Marchant
-                                                </button>
+                                                <a href="bank-deposit-p2c-form.html" class="btn btn-success create-btn">
+                                                    <i class="ri-add-line align-bottom me-1"></i> Add Bank
+                                                </a>
+
                                             </div>
 
                                             <div class="card-body">
@@ -636,19 +636,28 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
                                                                     </div>
                                                                 </th>
-                                                                <th scope="col">Merchant ID</th>
-                                                                <th scope="col">Merchant Name</th>
-                                                                <th scope="col">Merchant Email</th>
-                                                                <th scope="col">Username</th>
-                                                                <th scope="col">Merchant Logo</th>
+
+                                                                <th scope="col">Bank ID</th>
+                                                                <th scope="col">Bank Name</th>
+                                                                <th scope="col">Bank</th>
+                                                                <th scope="col">Agent ID</th>
+                                                                <th scope="col">Account</th>
                                                                 <th scope="col">Created On</th>
                                                                 <th scope="col">Last Updated</th>
-                                                                <th scope="col">Payment Method</th>
-                                                                <th scope="col">Wallet</th>
+
                                                                 <th scope="col">Status</th>
+                                                                <th scope="col">Minimum Limit</th>
+                                                                <th scope="col">Maximum Limit</th>
+                                                                <th scope="col">Daily Limit</th>
+                                                                <th scope="col">Daily Usage</th>
+                                                                <th scope="col">Monthly Limit</th>
+                                                                <th scope="col">Monthly Usage</th>
+
                                                                 <th scope="col">Action</th>
+
                                                             </tr>
                                                         </thead>
+
                                                         <tbody>
                                                             <tr>
                                                                 <td>
@@ -656,41 +665,29 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID001</td>
-                                                                <td>Merchant A</td>
-                                                                <td>merchantA@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-12 10:00:00</td>
+                                                                <td>#BID101</td>
+                                                                <td>M/S Rabby Traders</td>
+                                                                <td>bKash P2C</td>
+                                                                <td>AG76476</td>
+                                                                <td>1718734232</td>
+                                                                <td>2024-11-12 10:30:00</td>
                                                                 <td>2024-11-12 12:00:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>200</td>
+                                                                <td>25000</td>
+                                                                <td>300000</td>
+                                                                <td>50000</td>
+                                                                <td>300000</td>
+                                                                <td>1200000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2">
-                                                                                <img class="add_money_popup" style="width: 18px;" src="/assets/money-add.svg" alt="add money">
-                                                                            </a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch1">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -701,32 +698,26 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>merchantB@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-13 09:00:00</td>
-                                                                <td>2024-11-13 10:30:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                                                <td>#BID102</td>
+                                                                <td>M/S Rahim Electronics</td>
+                                                                <td>bKash P2C</td>
+                                                                <td>AG76477</td>
+                                                                <td>1718734233</td>
+                                                                <td>2024-11-13 09:15:00</td>
+                                                                <td>2024-11-13 11:00:00</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>300</td>
+                                                                <td>50000</td>
+                                                                <td>450000</td>
+                                                                <td>70000</td>
+                                                                <td>400000</td>
+                                                                <td>1500000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
                                                                             <input class="form-check-input code-switcher" type="checkbox" id="switch2">
@@ -740,35 +731,29 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID003</td>
-                                                                <td>Merchant C</td>
-                                                                <td>merchantC@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-14 08:00:00</td>
-                                                                <td>2024-11-14 11:00:00</td>
-                                                                <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
+                                                                <td>#BID103</td>
+                                                                <td>M/S Sifat Enterprises</td>
+                                                                <td>bKash P2C</td>
+                                                                <td>AG76478</td>
+                                                                <td>1718734234</td>
+                                                                <td>2024-11-14 14:00:00</td>
+                                                                <td>2024-11-14 16:00:00</td>
+                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>100</td>
+                                                                <td>12000</td>
+                                                                <td>150000</td>
+                                                                <td>30000</td>
+                                                                <td>250000</td>
+                                                                <td>800000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch3">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -779,35 +764,29 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option4">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID004</td>
-                                                                <td>Merchant D</td>
-                                                                <td>merchantD@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-15 07:00:00</td>
-                                                                <td>2024-11-15 09:30:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                                                <td>#BID104</td>
+                                                                <td>M/S Fortune Distributors</td>
+                                                                <td>bKash P2C</td>
+                                                                <td>AG76479</td>
+                                                                <td>1718734235</td>
+                                                                <td>2024-11-15 12:45:00</td>
+                                                                <td>2024-11-15 14:15:00</td>
+                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>150</td>
+                                                                <td>22000</td>
+                                                                <td>200000</td>
+                                                                <td>40000</td>
+                                                                <td>280000</td>
+                                                                <td>900000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch4">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -818,76 +797,95 @@
                                                                         <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option5">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID005</td>
-                                                                <td>Merchant E</td>
-                                                                <td>merchantE@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-16 06:00:00</td>
-                                                                <td>2024-11-16 08:00:00</td>
-                                                                <td>Rocket</td>
+                                                                <td>#BID105</td>
+                                                                <td>M/S Rana Developers</td>
+                                                                <td>bKash P2C</td>
+                                                                <td>AG76480</td>
+                                                                <td>1718734236</td>
+                                                                <td>2024-11-16 09:00:00</td>
+                                                                <td>2024-11-16 11:00:00</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>500</td>
+                                                                <td>60000</td>
+                                                                <td>700000</td>
+                                                                <td>120000</td>
+                                                                <td>500000</td>
+                                                                <td>2000000</td>
                                                                 <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
+                                                                    <div class="action-buttons d-flex align-items-center">
+                                                                        <div style="margin-right: 10px;">
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
+                                                                        </div>
+                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch5">
+                                                                        </div>
                                                                     </div>
                                                                 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option6">
+                                                                    </div>
+                                                                </td>
+                                                                <td>#BID106</td>
+                                                                <td>M/S Ideal Supply</td>
+                                                                <td>Rocket P2C</td>
+                                                                <td>AG76481</td>
+                                                                <td>1718734237</td>
+                                                                <td>2024-11-17 14:00:00</td>
+                                                                <td>2024-11-17 16:00:00</td>
+                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>400</td>
+                                                                <td>40000</td>
+                                                                <td>350000</td>
+                                                                <td>80000</td>
+                                                                <td>380000</td>
+                                                                <td>1500000</td>
+                                                                <td>
+                                                                    <div class="action-buttons d-flex align-items-center">
+                                                                        <div style="margin-right: 10px;">
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
+                                                                            <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
+                                                                            <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
+                                                                        </div>
+                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch6">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option7">
+                                                                    </div>
+                                                                </td>
+                                                                <td>#BID107</td>
+                                                                <td>M/S Shanta Electronics</td>
+                                                                <td>Rocket P2C</td>
+                                                                <td>AG76482</td>
+                                                                <td>1718734238</td>
+                                                                <td>2024-11-18 15:30:00</td>
+                                                                <td>2024-11-18 17:00:00</td>
                                                                 <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                                <td>600</td>
+                                                                <td>70000</td>
+                                                                <td>800000</td>
+                                                                <td>150000</td>
+                                                                <td>600000</td>
+                                                                <td>2500000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-
-
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
-                                                                    </div>
-                                                                </td>
-                                                                <td>#MID001</td>
-                                                                <td>Merchant A</td>
-                                                                <td>merchantA@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo1.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-12 10:00:00</td>
-                                                                <td>2024-11-12 12:00:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
-                                                                <td>
-                                                                    <div class="action-buttons d-flex align-items-center">
-                                                                        <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
-                                                                            <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
-                                                                        </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch7">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -895,38 +893,32 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option2">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option8">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID002</td>
-                                                                <td>Merchant B</td>
-                                                                <td>merchantB@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo2.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-13 09:00:00</td>
-                                                                <td>2024-11-13 10:30:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                                                <td>#BID108</td>
+                                                                <td>M/S Galaxy Traders</td>
+                                                                <td>Rocket P2C</td>
+                                                                <td>AG76483</td>
+                                                                <td>1718734239</td>
+                                                                <td>2024-11-19 10:30:00</td>
+                                                                <td>2024-11-19 12:00:00</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>700</td>
+                                                                <td>80000</td>
+                                                                <td>850000</td>
+                                                                <td>200000</td>
+                                                                <td>700000</td>
+                                                                <td>3000000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch8">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -934,38 +926,32 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option3">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option9">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID003</td>
-                                                                <td>Merchant C</td>
-                                                                <td>merchantC@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo3.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-14 08:00:00</td>
-                                                                <td>2024-11-14 11:00:00</td>
-                                                                <td>Nagad</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-danger-subtle text-danger">Hold</span></td>
+                                                                <td>#BID109</td>
+                                                                <td>M/S Techno Corporation</td>
+                                                                <td>Rocket P2C</td>
+                                                                <td>AG76484</td>
+                                                                <td>1718734240</td>
+                                                                <td>2024-11-20 11:00:00</td>
+                                                                <td>2024-11-20 13:00:00</td>
+                                                                <td><span class="badge bg-danger-subtle text-danger">Failed</span></td>
+                                                                <td>150</td>
+                                                                <td>18000</td>
+                                                                <td>220000</td>
+                                                                <td>50000</td>
+                                                                <td>350000</td>
+                                                                <td>1200000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch9">
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -973,88 +959,38 @@
                                                             <tr>
                                                                 <td>
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option4">
+                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option10">
                                                                     </div>
                                                                 </td>
-                                                                <td>#MID004</td>
-                                                                <td>Merchant D</td>
-                                                                <td>merchantD@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo4.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-15 07:00:00</td>
-                                                                <td>2024-11-15 09:30:00</td>
-                                                                <td>bKash</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                                                                <td>#BID110</td>
+                                                                <td>M/S Happy Mart</td>
+                                                                <td>Rocket P2C</td>
+                                                                <td>AG76485</td>
+                                                                <td>1718734241</td>
+                                                                <td>2024-11-21 13:00:00</td>
+                                                                <td>2024-11-21 15:00:00</td>
+                                                                <td><span class="badge bg-success-subtle text-success">Successful</span></td>
+                                                                <td>800</td>
+                                                                <td>100000</td>
+                                                                <td>1200000</td>
+                                                                <td>250000</td>
+                                                                <td>800000</td>
+                                                                <td>3500000</td>
                                                                 <td>
                                                                     <div class="action-buttons d-flex align-items-center">
                                                                         <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
+                                                                            <a href="#!" class="action-btn me-2"><i class="ri-eye-fill align-bottom"></i></a>
                                                                             <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
                                                                             <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
                                                                         </div>
                                                                         <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
+                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch10">
                                                                         </div>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-
-
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option5">
-                                                                    </div>
-                                                                </td>
-                                                                <td>#MID005</td>
-                                                                <td>Merchant E</td>
-                                                                <td>merchantE@example.com</td>
-                                                                <td>username1</td>
-                                                                <td><img src="logo5.png" alt="Logo" style="width:50px;"></td>
-                                                                <td>2024-11-16 06:00:00</td>
-                                                                <td>2024-11-16 08:00:00</td>
-                                                                <td>Rocket</td>
-                                                                <td>
-                                                                    <div class="price_button">
-                                                                        <span class="select2-selection__choice__display" id="select2-ip_whitelisting-container-choice-exvt-BDT 100">BDT 100</span>
-                                                                        <button type="button" class="adjust_amount">
-                                                                            <span aria-hidden="true"><i class="ri-pencil-fill align-bottom"></i></span>
-                                                                        </button>
-                                                                    </div>
-                                                                </td>
-                                                                <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
-                                                                <td>
-                                                                    <div class="action-buttons d-flex align-items-center">
-                                                                        <div style="margin-right: 10px;">
-                                                                            <a href="#!" class="action-btn me-2"><img class="add_money_popup" style="width: 18px;"
-                                                                                                                      src="/assets/money-add.svg"
-                                                                                                                      alt="add money"></a>
-                                                                            <a href="merchant-settings.html" class="action-btn me-2"><i class="ri-pencil-fill align-bottom"></i></a>
-                                                                            <a href="#!" class="action-btn text-danger me-2"><i class="ri-delete-bin-fill align-bottom"></i></a>
-
-                                                                        </div>
-                                                                        <div class="form-check form-switch form-switch-right form-switch-md mb-0">
-                                                                            <input class="form-check-input code-switcher" type="checkbox" id="switch2">
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <!-- Repeat similar pattern for remaining rows -->
                                                         </tbody>
-
                                                     </table>
-
                                                 </div>
                                             </div>
                                         </div> <!-- .card-->
@@ -1086,258 +1022,6 @@
         </div>
     </div>
 
-    <!-- Varying modal content -->
-    <div class="modal fade" id="varyingcontentModal" tabindex="-1" aria-labelledby="varyingcontentModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="varyingcontentModalLabel">Add Wallet: BetConstruct Test</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="wallet_currency" class="col-form-label">Wallet currency <span style="color: red;">*</span></label>
-                            <select id="wallet_currency" class="form-control" name="wallet_currency">
-                                <option value="BDT">BDT</option>
-                                <option value="USD">USD</option>
-                                <option value="INR">INR</option>
-                                <option value="EUR">EUR</option>
-                                <option value="GBP">GBP</option>
-                                <option value="CAD">CAD</option>
-                                <option value="AUD">AUD</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-                    <button type="button" class="btn btn-primary submit_button">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- staticBackdrop Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <lord-icon src="https://cdn.lordicon.com/lupuorrc.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:120px;height:120px"></lord-icon>
-
-                    <div class="mt-4">
-                        <h4 class="mb-3">You've made it!</h4>
-                        <p class="text-muted mb-4"> Wallet created successfully !</p>
-                        <div class="hstack gap-2 justify-content-center">
-                            <a href="javascript:void(0);" class="btn btn-success close_success_button">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Varying modal content -->
-    <div class="modal fade" id="updateCartWallet" tabindex="-1" aria-labelledby="updateCartWalletLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="updateCartWalletLabel">Update CAD Wallet: BetConstruct Test</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="update_cart_wallet" class="col-form-label">CAD Balance</label>
-                            <div class="row">
-                                <div class="col-6 mb-3">
-                                    <select id="update_cart_wallet" class="form-control" name="update_cart_wallet">
-                                        <option value="Add Balance">Add Balance</option>
-                                        <option value="Deduct Balance">Deduct Balance</option>
-                                    </select>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <input type="text" class="form-control" id="adjustable_amount" placeholder="Adjustable amount">
-                                </div>
-
-                                <div class="col-12">
-                                    <button class="btn btn-default w-100" style=" background: #38477E1A;color: #38477E;border: none;">Update</button>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 mb-3">
-                                    <label for="settlement_fee" class="col-form-label">Settlement Fee</label>
-                                    <input type="text" class="form-control" id="settlement_fee" placeholder="Settlement Fee" value="2.5%">
-                                </div>
-
-                                <div class="col-6 mb-3">
-                                    <label for="settlement_fee_name" class="col-form-label">Name</label>
-                                    <input type="text" class="form-control" id="settlement_fee_name" placeholder="Name">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <button class="btn btn-default w-100" style=" background: #38477E1A;color: #38477E;border: none;">Update</button>
-                                </div>
-                            </div>
-
-
-                            <div class="row currency_conversion">
-                                <!-- Currency Conversion -->
-                                <div class="col-12">
-                                    <div class="card mb-3">
-                                        <div class="card-header">Currency Conversion</div>
-                                        <div class="card-body d-flex flex-column">
-                                            <div class="mb-3 d-flex justify-content-between">
-                                                <div class="currency" style="width: 60%; text-align: left;">Currency</div>
-                                                <div class="rate" style="width: 35%; text-align: left;">Rate</div>
-                                            </div>
-
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <label class="me-2 conversion_label">BDT</label>
-                                                <input type="number" class="form-control conversion_input" value="1">
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <label class="me-2 conversion_label">USD</label>
-                                                <input type="number" class="form-control conversion_input" value="125">
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <label class="me-2 conversion_label">EUR</label>
-                                                <input type="number" class="form-control conversion_input" value="127">
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <label class="me-2 conversion_label">INR</label>
-                                                <input type="number" class="form-control conversion_input" value="2">
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <label class="me-2 conversion_label">PKR</label>
-                                                <input type="number" class="form-control conversion_input" value="2">
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-center">
-                                            <button class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Deposit -->
-                                <div class="col-12">
-                                    <div class="card mb-3">
-                                        <div class="card-header">Deposit</div>
-                                        <div class="card-body d-flex flex-column">
-
-                                            <div class="mb-3 d-flex justify-content-between">
-                                                <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                                <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                            </div>
-
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="bkashP2C" class="form-check-input">
-                                                    <label for="bkashP2C" class="form-check-label">bkash P2C</label>
-                                                </div>
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="nagodP2C" class="form-check-input">
-                                                    <label for="nagodP2C" class="form-check-label">Nagod P2C</label>
-                                                </div>
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="bkashP2P" class="form-check-input">
-                                                    <label for="bkashP2P" class="form-check-label">bkash P2P</label>
-                                                </div>
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-center">
-                                            <button class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Withdraw -->
-                                <div class="col-12">
-                                    <div class="card mb-3">
-                                        <div class="card-header">Withdraw</div>
-                                        <div class="card-body d-flex flex-column">
-
-                                            <div class="mb-3 d-flex justify-content-between">
-                                                <div class="currency" style="width: 60%; text-align: left;">Bank Type</div>
-                                                <div class="rate" style="width: 35%; text-align: left;">Deal</div>
-                                            </div>
-
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="bkashWP2P" class="form-check-input">
-                                                    <label for="bkashWP2P" class="form-check-label">bkash_W P2P</label>
-                                                </div>
-
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="nagodWP2P" class="form-check-input">
-                                                    <label for="nagodWP2P" class="form-check-label">Nagod_W P2P</label>
-                                                </div>
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="3.00"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 d-flex justify-content-between align-items-center">
-                                                <div class="conversion_label">
-                                                    <input type="checkbox" id="rocketWP2P" class="form-check-input">
-                                                    <label for="rocketWP2P" class="form-check-label">Rocket_W P2P</label>
-                                                </div>
-
-                                                <div class="currency_conversion_input_percentage">
-                                                    <div class="input-container">
-                                                        <input type="number" class="form-control" step="0.01" value="1.50"/>
-                                                        <span class="suffix">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-center">
-                                            <button class="btn btn-primary w-100">Update</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- JAVASCRIPT -->
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1390,31 +1074,6 @@
             "info": false,
             "scrollX": true,
         });
-
-        $(document).ready(function () {
-            // When .add_money_popup is clicked, show the modal
-            $('.add_money_popup').on('click', function () {
-                $('#varyingcontentModal').modal('show');
-            });
-
-            $('.submit_button').on('click', function () {
-                $('#varyingcontentModal').modal('hide');
-                $('#staticBackdrop').modal('show');
-            });
-
-            $('.close_success_button').on('click', function () {
-                $('#staticBackdrop').modal('hide');
-            });
-
-            $('.adjust_amount').on('click', function () {
-                $('#updateCartWallet').modal('show');
-            });
-
-            $('.submit_button_update_wallet').on('click', function () {
-                $('#updateCartWallet').modal('hide');
-            });
-        });
-
     </script>
 
 </body>
