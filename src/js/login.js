@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: error.response.data.detail
                 });
                 // redirect to login page
-                window.location.href = "login.html";
+                window.location.href = "signin.html";
             }
         });
     }
