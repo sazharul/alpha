@@ -1,29 +1,30 @@
 <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default"
+      data-theme-colors="default">
 
 
 <!-- Mirrored from themesbrand.com/velzon/html/master/auth-twostep-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:57:23 GMT -->
 <head>
 
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Two Step Verification | Velzon - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description"/>
+    <meta content="Themesbrand" name="author"/>
     <!-- App favicon -->
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
 
     <!-- Layout config Js -->
     <script src="/assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- Icons Css -->
-    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
     <!-- App Css-->
-    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
     <!-- custom Css-->
-    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-
+    <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+    <script type="module" src="/js/main.js"></script>
 </head>
 
 <body>
@@ -73,44 +74,52 @@
                                 <div class="p-2 mt-4">
                                     <div class="text-muted text-center mb-4 mx-lg-3">
                                         <h4>Verify Your Email</h4>
-                                        <p>Please enter the 4 digit code sent to <span class="fw-semibold">example@abc.com</span></p>
+                                        <p>Please enter the 4 digit code sent to your mail</p>
                                     </div>
 
-                                    <form autocomplete="off" action="dashboard.html">
+                                    <form autocomplete="off" action="#" id="otpForm">
                                         <div class="row">
                                             <div class="col-3">
                                                 <div class="mb-3">
                                                     <label for="digit1-input" class="visually-hidden">Digit 1</label>
-                                                    <input type="text" class="form-control form-control-lg bg-light border-light text-center" onkeyup="moveToNext(1, event)" maxLength="1" id="digit1-input">
+                                                    <input type="text" name="digit1" class="form-control form-control-lg bg-light border-light text-center"
+                                                           onkeyup="moveToNext(1, event)"
+                                                           maxLength="1" id="digit1-input">
                                                 </div>
                                             </div><!-- end col -->
 
                                             <div class="col-3">
                                                 <div class="mb-3">
                                                     <label for="digit2-input" class="visually-hidden">Digit 2</label>
-                                                    <input type="text" class="form-control form-control-lg bg-light border-light text-center" onkeyup="moveToNext(2, event)" maxLength="1" id="digit2-input">
+                                                    <input type="text" name="digit2" class="form-control form-control-lg bg-light border-light text-center"
+                                                           onkeyup="moveToNext(2, event)"
+                                                           maxLength="1" id="digit2-input">
                                                 </div>
                                             </div><!-- end col -->
 
                                             <div class="col-3">
                                                 <div class="mb-3">
                                                     <label for="digit3-input" class="visually-hidden">Digit 3</label>
-                                                    <input type="text" class="form-control form-control-lg bg-light border-light text-center" onkeyup="moveToNext(3, event)" maxLength="1" id="digit3-input">
+                                                    <input type="text" name="digit3" class="form-control form-control-lg bg-light border-light text-center"
+                                                           onkeyup="moveToNext(3, event)"
+                                                           maxLength="1" id="digit3-input">
                                                 </div>
                                             </div><!-- end col -->
 
                                             <div class="col-3">
                                                 <div class="mb-3">
                                                     <label for="digit4-input" class="visually-hidden">Digit 4</label>
-                                                    <input type="text" class="form-control form-control-lg bg-light border-light text-center" onkeyup="moveToNext(4, event)" maxLength="1" id="digit4-input">
+                                                    <input type="text" name="digit4" class="form-control form-control-lg bg-light border-light text-center"
+                                                           onkeyup="moveToNext(4, event)"
+                                                           maxLength="1" id="digit4-input">
                                                 </div>
                                             </div><!-- end col -->
                                         </div>
-                                    </form><!-- end form -->
 
-                                    <div class="mt-3">
-                                        <a href="dashboard.html?show_popup=true" class="btn btn-success w-100">Confirm</a>
-                                    </div>
+                                        <div class="mt-3">
+                                            <button type="submit" class="btn btn-success w-100">Confirm</button>
+                                        </div>
+                                    </form><!-- end form -->
                                 </div>
                             </div>
                             <!-- end card body -->
@@ -118,7 +127,7 @@
                         <!-- end card -->
 
                         <div class="mt-4 text-center">
-                            <p class="mb-0">Didn't receive a code ? <a href="#" class="fw-semibold text-primary text-decoration-underline">Resend</a> </p>
+                            <p class="mb-0">Didn't receive a code ? <a href="#" class="fw-semibold text-primary text-decoration-underline">Resend</a></p>
                         </div>
 
                     </div>
@@ -136,7 +145,8 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                <script>document.write(new Date().getFullYear())</script>
+                                Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
                             </p>
                         </div>
                     </div>

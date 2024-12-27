@@ -1,7 +1,7 @@
 import apiClient from './axios.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("form");
+    const loginForm = document.getElementById("loginForm");
 
     if (loginForm) {
         loginForm.addEventListener("submit", async (e) => {
@@ -23,7 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
             } catch (error) {
                 console.error(error);
                 // alert response message
-                alert(error.response.data.detail);
+                // toastMixin
+                toastMixin.fire({
+                    icon: 'error',
+                    title: error.response.data.detail
+                });
+                // redirect to login page
+                window.location.href = "login.html";
             }
         });
     }
