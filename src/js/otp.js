@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (otpForm) {
         otpForm.addEventListener("submit", async (e) => {
             e.preventDefault();
+            $('.preloader').show();
 
             // Get the OTP from the form
             const otp = [
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ].join(""); // Join the digits to form the full OTP string
 
             // Get email (this could be passed as a hidden field or stored in localStorage/sessionStorage)
-            const email = localStorage.getItem("userEmail") || "maloy.virat@gmail.com"; // Replace with the actual email source
+            const email = localStorage.getItem("userEmail"); // Replace with the actual email source
 
             // Validate OTP input
             if (otp.length !== 4) {
@@ -34,31 +35,48 @@ document.addEventListener("DOMContentLoaded", () => {
                     otp
                 });
 
-                // Handle success response
-                if (response.data.message === "OTP verified successfully.") {
-                    // Redirect to the dashboard or home page
-                    window.location.href = "dashboard.html";
-                } else {
-                    // Handle unexpected response
+                if (response.status) {
+                    // toastMixin show success message
+                    $('.preloader').hide();
+
                     toastMixin.fire({
-                        icon: 'error',
-                        title: 'OTP verification failed.'
+                        icon: 'success',
+                        title: response.data.message
                     });
+
+                    // go to login page
+                    setTimeout(() => {
+                        window.location.href = "signin.html";
+                    }, 2000);
                 }
+
             } catch (error) {
                 console.error(error);
 
-                // Handle errors from backend
                 if (error.response && error.response.data) {
-                    toastMixin.fire({
-                        icon: 'error',
-                        title: error.response.data.detail || 'An error occurred during OTP verification.'
-                    });
+                    const errorData = error.response.data;
+
+                    // Check if the status is false and there are error messages in the data
+                    if (errorData.status === false && errorData.data) {
+                        const errorMessages = Object.values(errorData.data).flat();  // Flatten the array of errors
+
+                        // Display the first error message (you can adjust this to show all errors if needed)
+                        toastMixin.fire({
+                            icon: 'error',
+                            title: errorMessages[0] || 'An error occurred.'  // Default message
+                        });
+                    } else {
+                        // Fallback error message
+                        toastMixin.fire({
+                            icon: 'error',
+                            title: 'An error occurred during OTP verification.'  // Default message when status is not false
+                        });
+                    }
                 } else {
                     // Handle network or other unexpected errors
                     toastMixin.fire({
                         icon: 'error',
-                        title: 'Network error, please try again.'
+                        title: 'Network error, please try again.'  // Default network error message
                     });
                 }
             }

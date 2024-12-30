@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (registrationForm) {
         registrationForm.addEventListener("submit", async (e) => {
             e.preventDefault();
+            $('.preloader').show();
 
             // Get form values
             const email = document.getElementById("useremail").value;
@@ -32,27 +33,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 // set email in localStorage
-                localStorage.setItem("userEmail", email);
+                localStorage.setItem("email", email);
+
+                $('.preloader').hide();
 
                 // Assuming you get a success message upon successful registration
                 window.location.href = "otp.html";
 
             } catch (error) {
-                console.error(error);
-
+                const errorMessages = Object.values(error.response.data.data).flat()
+                console.error(errorMessages);
+                $('.preloader').show();
                 // Handle errors from backend
-                if (error.response && error.response.data) {
+
+                if (error.response.data.status === false) {
+                    // errorMessages
                     toastMixin.fire({
                         icon: 'error',
-                        title: error.response.data.detail || 'An error occurred during registration.'
-                    });
-                } else {
-                    // Handle network or other unexpected errors
-                    toastMixin.fire({
-                        icon: 'error',
-                        title: 'Network error, please try again.'
+                        title: errorMessages[0]
                     });
                 }
+
             }
         });
     }

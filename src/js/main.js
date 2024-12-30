@@ -1,3 +1,6 @@
+// add styles. scss
+import '../scss/styles.scss';
+
 import apiClient from './axios.js';
 import $ from 'jquery';
 
@@ -31,7 +34,8 @@ var toastMixin = Swal.mixin({
 
 window.toastMixin = toastMixin;
 
-
+import './menu.js';
+import './header.js';
 import './custome.js';
 import './login.js';
 import './registration.js';
