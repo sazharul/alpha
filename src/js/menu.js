@@ -28,7 +28,7 @@ const renderMenu = (menuItems) => {
     if (navbarNav) {
         navbarNav.innerHTML = '';  // Clear the existing menu items
     } else {
-        console.error('Navbar element not found');
+        //console.error('Navbar element not found');
         return false;
     }
 

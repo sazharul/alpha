@@ -76,3 +76,45 @@ function moveToNext(currentInput, event) {
         document.getElementById(`digit${currentInput + 1}-input`).focus();
     }
 }
+
+// onclick resendOtp id send OTP again wtih axios send email
+document.addEventListener("DOMContentLoaded", () => {
+    const resendOtpButton = document.getElementById("resendOtp");
+
+    if(!resendOtpButton){
+        return false;
+    }
+
+    if (resendOtpButton) {
+        resendOtpButton.addEventListener("click", async () => {
+            $('.preloader').show();
+
+            const email = localStorage.getItem("email"); // Replace with the actual email source
+
+            try {
+                const response = await apiClient.post("/api/v1/app-auth/resend-verify-otp/", {email});
+
+                if (response.status) {
+                    $('.preloader').hide();
+
+                    toastMixin.fire({
+                        icon: 'success',
+                        title: response.message
+                    });
+                }
+            } catch (error) {
+                $('.preloader').hide();
+
+                if (error.response?.data?.status === false) {
+                    toastMixin.fire({
+                        icon: 'error',
+                        title: error.response.data.message
+                    });
+                }
+            }
+        });
+    } else {
+        console.warn('The resendOtp element does not exist in the DOM.');
+    }
+});
+
