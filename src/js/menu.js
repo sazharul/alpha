@@ -4,9 +4,15 @@ import menus from './variable.js';
 // Load the menu based on the user's role
 const loadMenu = () => {
     // Get the user's role from session storage
-    const userRole = localStorage.getItem('userRole') || 'admin'; // default to 'user' if no role is found
+    let userRole = localStorage.getItem('userRole') || 'admin'; // default to 'user' if no role is found
 
-    console.log(userRole, 'user role');
+    // get user email
+    let userEmail = localStorage.getItem('email');
+
+    if(userEmail === 'admin@gmail.com'){
+        userRole = 'admin';
+    }
+
     // Check if the role exists in the menus object
     if (menus[userRole]) {
         renderMenu(menus[userRole].navbar);

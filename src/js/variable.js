@@ -89,6 +89,12 @@ const menus = {
             {
                 type: "link",
                 label: "Settlement Management",
+                icon: "ri-bank-card-line",
+                href: "/settlement-management.html"
+            },
+            {
+                type: "link",
+                label: "Staff Management",
                 icon: "ri-user-3-line",
                 href: "/settlement-management.html"
             },
@@ -101,11 +107,11 @@ const menus = {
         ]
     },
 
-    merchant: {
+    agent: {
         navbar: [
             {
                 type: "title",
-                label: "#Merchant"
+                label: "#Agent"
             },
             {
                 type: "link",
@@ -170,11 +176,11 @@ const menus = {
         ]
     },
 
-    agent: {
+    merchant: {
         navbar: [
             {
                 type: "title",
-                label: "#Agent"
+                label: "#Merchant"
             },
             {
                 type: "link",

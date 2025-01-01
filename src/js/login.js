@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         // localStorage.getItem remove email
                         window.location.href = "dashboard.html";
-                    }, 2000);
+                    }, 1000);
                 }
 
             } catch (error) {
