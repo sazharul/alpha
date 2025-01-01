@@ -40,3 +40,5 @@ import './custome.js';
 import './login.js';
 import './registration.js';
 import './otp.js';
+import './forgot-password.js';
+import './set-new-password.js';

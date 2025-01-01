@@ -7,6 +7,8 @@ const userRole = localStorage.getItem("userRole");
 // List of public pages that don't require authentication
 const publicPages = [
     "index.html",
+    "set-new-password.html",
+    "reset-password-otp.html",
     "signin.html",
     "signup.html",
     "forgot-password.html",

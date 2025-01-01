@@ -43,6 +43,8 @@ export default defineConfig({
                 forgot_password: path.resolve(__dirname, 'src', 'forgot-password.html'), // Specify the main entry point
                 otp: path.resolve(__dirname, 'src', 'otp.html'), // Specify the main entry point
                 forget_otp: path.resolve(__dirname, 'src', 'forget-otp.html'), // Specify the main entry point
+                reset_password_otp: path.resolve(__dirname, 'src', 'reset-password-otp.html'), // Specify the main entry point
+                set_new_password: path.resolve(__dirname, 'src', 'set-new-password.html'), // Specify the main entry point
                 logout: path.resolve(__dirname, 'src', 'logout.html'), // Specify the main entry point
                 agent_management: path.resolve(__dirname, 'src', 'agent-management.html'), // Specify the main entry point
                 agent_settings: path.resolve(__dirname, 'src', 'agent-settings.html'), // Specify the main entry point

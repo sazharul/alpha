@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 if (response.status) {
+
+                    // store otp in localStorage
+                    localStorage.setItem("otp", otp);
+
                     // toastMixin show success message
                     $('.preloader').hide();
 
