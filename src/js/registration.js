@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } catch (error) {
                 const errorMessages = Object.values(error.response.data.data).flat()
                 console.error(errorMessages);
-                $('.preloader').show();
+                $('.preloader').hide();
                 // Handle errors from backend
 
                 if (error.response.data.status === false) {

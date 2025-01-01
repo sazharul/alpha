@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ].join(""); // Join the digits to form the full OTP string
 
             // Get email (this could be passed as a hidden field or stored in localStorage/sessionStorage)
-            const email = localStorage.getItem("userEmail"); // Replace with the actual email source
+            const email = localStorage.getItem("email"); // Replace with the actual email source
 
             // Validate OTP input
             if (otp.length !== 4) {
@@ -41,42 +41,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     toastMixin.fire({
                         icon: 'success',
-                        title: response.data.message
+                        title: response.message
                     });
 
                     // go to login page
                     setTimeout(() => {
+                        // localStorage.getItem remove email
+                        localStorage.removeItem("email");
                         window.location.href = "signin.html";
                     }, 2000);
                 }
 
             } catch (error) {
-                console.error(error);
 
-                if (error.response && error.response.data) {
-                    const errorData = error.response.data;
+                $('.preloader').hide();
 
-                    // Check if the status is false and there are error messages in the data
-                    if (errorData.status === false && errorData.data) {
-                        const errorMessages = Object.values(errorData.data).flat();  // Flatten the array of errors
-
-                        // Display the first error message (you can adjust this to show all errors if needed)
-                        toastMixin.fire({
-                            icon: 'error',
-                            title: errorMessages[0] || 'An error occurred.'  // Default message
-                        });
-                    } else {
-                        // Fallback error message
-                        toastMixin.fire({
-                            icon: 'error',
-                            title: 'An error occurred during OTP verification.'  // Default message when status is not false
-                        });
-                    }
-                } else {
-                    // Handle network or other unexpected errors
+                if (error.response.data.status === false) {
+                    // errorMessages
                     toastMixin.fire({
                         icon: 'error',
-                        title: 'Network error, please try again.'  // Default network error message
+                        title: error.response.data.message
                     });
                 }
             }

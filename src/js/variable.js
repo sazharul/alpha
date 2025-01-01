@@ -29,7 +29,7 @@ const menus = {
                     }
                 ]
             },
-             {
+            {
                 type: "collapse",
                 label: "Withdrawals",
                 icon: "ri-bank-line",

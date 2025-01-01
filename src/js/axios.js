@@ -65,11 +65,11 @@ apiClient.interceptors.response.use(
                 } catch (refreshError) {
                     console.error('Token refresh failed:', refreshError);
                     // Log the user out if the refresh fails
-                    handleLogout();
+                    //handleLogout();
                 }
             } else {
                 // No refresh token available, log out the user
-                handleLogout();
+                //handleLogout();
             }
         }
 

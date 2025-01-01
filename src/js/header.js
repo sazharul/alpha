@@ -441,7 +441,7 @@ function injectHeader() {
 // Call injectHeader when the page is ready
 injectHeader();
 
-window.onload = function() {
+window.onload = function () {
     // Fetch name and role from localStorage
     const userName = localStorage.getItem('username');
     const userRole = localStorage.getItem('userRole');

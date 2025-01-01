@@ -5,7 +5,7 @@
 
 <!-- Mirrored from themesbrand.com/velzon/html/master/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 10 Nov 2024 17:54:18 GMT -->
 <head>
-
+    <script src="config/middleware.js"></script>
     <meta charset="utf-8"/>
     <title>Dashboard | Velzon - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <!--datatable responsive css-->
     <link rel="stylesheet" href="/assets/cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
 
 
     <!-- Layout config Js -->
@@ -39,13 +39,7 @@
     <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
     <!-- custom Css-->
     <link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
-
-<script>
-       const accessToken = localStorage.getItem("accessToken");
-       if (!accessToken) {
-           window.location.href = "/logout.html";
-       }
-</script>
+    <script type="module" src="/js/main.js"></script>
 
 </head>
 
